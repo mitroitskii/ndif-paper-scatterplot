@@ -1,635 +1,308 @@
-paper,year,link,model family,model,param count,notes,affiliations
-"S. Marks, C. Rager, E. J. Michaud, Y. Belinkov, D. Bau, and A. Mueller. Sparse feature circuits: Discovering and editing interpretable causal graphs in language models. Computing Research Repository,
-arXiv:2403.19647, 2024. URL https://arxiv.org/abs/2403.19647.",2024,https://arxiv.org/abs/2403.19647,pythia,Pythia-70M,70000000,trained an SAE on pythia-70M activations,
-"B. Wright and L. Sharkey. Addressing feature suppression in saes. AI ALIGNMENT FORUM, 2024. URL
-https://www.alignmentforum.org/posts/3JuSjTZyMzaSeTxKk/addressing-feature-suppression
--in-saes.",2024,https://www.alignmentforum.org/posts/3JuSjTZyMzaSeTxKk/addressing-feature-suppression-in-saes,pythia,pythia-70m,70000000,,MATS
-"W. Gurnee. Sae reconstruction errors are (empirically) pathological. AI Alignment Forum, 2024. URL https:
-//www.alignmentforum.org/posts/rZPiuFxESMxCDHe4B/sae-reconstruction-errors-are-empir
-ically-pathological.",2024,https://www.alignmentforum.org/posts/rZPiuFxESMxCDHe4B/sae-reconstruction-errors-are-empirically-pathological,gpt-2,GPT2-small,124000000,,
-"C. Kissane, R. Krzyzanowski, A. Conmy, and N. Nanda. Attention saes scale to gpt-2 small. AI Alignment
-Forum, 2024b. URL https://www.alignmentforum.org/posts/FSTRedtjuHa4Gfdbr/attention-sae
-s-scale-to-gpt-2-small.",2024,https://www.alignmentforum.org/posts/FSTRedtjuHa4Gfdbr/attention-saes-scale-to-gpt-2-small,gpt-2,gpt-2-small,124000000,,MATS
-"J. Bloom and J. Lin. Understanding SAE features with the logit lens. AI Alignment Forum, 2024. URL
-https://www.alignmentforum.org/posts/qykrYY6rXXM7EEs8Q/understanding-sae-features-wit
-h-the-logit-lens.",2024,https://www.alignmentforum.org/posts/qykrYY6rXXM7EEs8Q/understanding-sae-features-with-the-logit-lens,gpt-2,gpt2-small,124000000,,
-"J. Bloom. Open source sparse autoencoders for all residual stream layers of GPT2 small. AI Alignment Forum,
-2024. URL https://www.alignmentforum.org/posts/f9EgfLSurAiqRJySD/open-source-sparse-a
-utoencoders-for-all-residual-stream.",2024,https://www.alignmentforum.org/posts/f9EgfLSurAiqRJySD/open-source-sparse-autoencoders-for-all-residual-stream,gpt-2,gpt2-small,124000000,,
-"M. Hanna, S. Pezzelle, and Y. Belinkov. Have faith in faithfulness: Going beyond circuit overlap when finding
-model mechanisms, 2024. URL https://arxiv.org/abs/2403.17806.",2024,https://arxiv.org/abs/2403.17806,gpt-2,gpt2-small,124000000,,
-"R. Krzyzanowski, C. Kissane, A. Conmy, and N. Nanda. We inspected every head in GPT-2 small using saes
-so you don’t have to. AI Alignment Forum, 2024. URL https://www.alignmentforum.org/posts/xme
-geW5mqiBsvoaim/we-inspected-every-head-in-gpt-2-small-using-saes-so-you-don.",2024,https://www.alignmentforum.org/posts/xmegeW5mqiBsvoaim/we-inspected-every-head-in-gpt-2-small-using-saes-so-you-don,gpt-2,gpt2-small,124000000,,
-"J. Ferrando and E. Voita. Information flow routes: Automatically interpreting language models at scale. Arxiv,
-2024. URL https://arxiv.org/abs/2403.00824.",2024,https://arxiv.org/abs/2403.00824,opt-2,OPT2-small,125000000,and gpt2-small,
-"N. Stoehr, M. Gordon, C. Zhang, and O. Lewis. Localizing paragraph memorization in language models, 2024.
-URL https://arxiv.org/abs/2403.19851.",2024,https://arxiv.org/abs/2403.19851,gpt-neo,,125000000,gpt-neo 125m,
-"C. Rushing and N. Nanda. Explorations of self-repair in language models, 2024. URL https://arxiv.org/
-abs/2402.15390.",2024,https://arxiv.org/abs/2402.15390,pythia,pythia,160000000,,University of Texas at Austin
-"S. Katz, Y. Belinkov, M. Geva, and L. Wolf. Backward lens: Projecting language model gradients into the
-vocabulary space, 2024.",2024,https://arxiv.org/abs/2402.12865,gpt-2,GPT2,330000000,"I'm quoting the parameter count they mention in the paper, but everyone seems to think gpt2-medium has a different number of parameters.",
+paper,publication date (first revision),link,model family,model,param count,notes,
+"Z. Wu, A. Geiger, T. Icard, C. Potts, and N. Goodman. Interpretability at scale: Identifying causal mechanisms
+in alpaca.",2023-05-15,https://arxiv.org/abs/2305.08809,,Alpaca,7000000000,notes,
+"N. De Cao, W. Aziz, and I. Titov. Editing factual knowledge in language models.",2021-04-16,https://arxiv.org/abs/2104.08164,bart,BART base,139000000,BERT (fintuned),
+"S. Ravfogel, M. Twiton, Y. Goldberg, and R. D. Cotterell. Linear adversarial concept erasure. ",2022-01-28,https://arxiv.org/abs/2201.12091,,BERT,340000000,didnt specify whether they used the big or small version of BERT,
+"A. Geiger, Z. Wu, H. Lu, J. Rozner, E. Kreiss, T. Icard, N. D. Goodman, and C. Potts. Inducing causal structure
+for interpretable neural networks.",2021-12-1,https://arxiv.org/abs/2112.00826,,bert,110000000,,
+"A. Geiger, H. Lu, T. Icard, and C. Potts. Causal abstractions of neural networks. ",2021-06-06,https://arxiv.org/abs/2106.02997,bert,bert,110000000,also studied a bilstm,
+"T. Bolukbasi, A. Pearce, A. Yuan, A. Coenen, E. Reif, F. Viégas, and M. Wattenberg. An interpretability illusion
+for BERT.",2021-04-21,https://arxiv.org/abs/2104.07143,bert,BERT,340000000,,
+"V. Lal, A. Ma, E. Aflalo, P. Howard, A. Simoes, D. Korat, O. Pereg, G. Singer, and M. Wasserblat. InterpreT: An
+interactive visualization tool for interpreting transformers.",2021-04-19,https://aclanthology.org/2021.eacl-demos.17,bert,BERT,340000000,,no arxiv
+"D. Dai, L. Dong, Y. Hao, Z. Sui, B. Chang, and F. Wei. Knowledge neurons in pretrained transformers. ",2021-04-18,https://arxiv.org/abs/2104.08696,,bert,110000000,,
+"Y. Elazar, S. Ravfogel, A. Jacovi, and Y. Goldberg. Amnesic probing: Behavioral explanation with amnesic
+counterfactuals. ",2020-06-01,https://arxiv.org/abs/2006.00995,bert,BERT,110000000,,
+"A. Geiger, K. Richardson, and C. Potts. Neural natural language inference models partially embed theories
+of lexical entailment and negation.",2020-04-30,https://arxiv.org/abs/2004.14623,bert,bert,110000000,also studied a bilstm and esim,
+"T. Pimentel, J. Valvoda, R. H. Maudslay, R. Zmigrod, A. Williams, and R. Cotterell. Information-theoretic
+probing for linguistic structure.",2020-04-07,https://arxiv.org/abs/2004.03061,,BERT,340000000,also used fastText and one-hot encoding vectors,
+"G. Brunner, Y. Liu, D. Pascual, O. Richter, M. Ciaramita, and R. Wattenhofer. On identifiability in transformers.
+",2019-08-12,https://arxiv.org/abs/1908.04211,,BERT,110000000,,
+"Y. Lin, Y. C. Tan, and R. Frank. Open sesame: Getting inside BERT’s linguistic knowledge. ",2019-06-04,https://arxiv.org/abs/1906.01698,,BERT,340000000,notes,
+"T. McCoy, E. Pavlick, and T. Linzen. Right for the wrong reasons: Diagnosing syntactic heuristics in natural
+language inference.",2019-02-04,https://arxiv.org/abs/1902.01007,,BERT,340000000,"used BERT, ESIM, SPINN, and DA. BERT is the only transformer. ESIM is an RNN, SPINN is a TreeRNN, DA is a bag-of-words.",
+J. Enguehard. Sequential integrated gradients: a simple but effective method for explaining language models. ,2023-05-25,https://arxiv.org/abs/2305.15853,,bert-base,120000000,"BERT, DistilBERT and RoBERTa",
+"J. Ferrando, G. I. Gállego, and M. R. Costa-jussà. Measuring the mixing of contextual information in the
+transformer.",2022-03-08,https://arxiv.org/abs/2203.04212,,bert-base,120000000,"BERT, DistilBERT and RoBERTa",
+"J. Bastings, S. Ebert, P. Zablotskaia, A. Sandholm, and K. Filippova. “will you find these shortcuts?” a
+protocol for evaluating the faithfulness of input salience methods for text classification. ",2021-11-14,https://arxiv.org/abs/2111.07367,,bert-base,110000000,,
+"H. Chefer, S. Gur, and L. Wolf. Transformer interpretability beyond attention visualization.",2020-10-17,https://arxiv.org/abs/2012.09838,bert,BERT-base,110000000,,
+"X. Han, B. C. Wallace, and Y. Tsvetkov. Explaining black box predictions and unveiling data artifacts
+through influence functions.",2020-05-14,https://arxiv.org/abs/2005.06676,bert,BERT-base,110000000,,
+"G. Kobayashi, T. Kuribayashi, S. Yokoi, and K. Inui. Attention is not only a weight: Analyzing transformers
+with vector norms.",2020-04-21,https://arxiv.org/abs/2004.10102,,BERT-base,110000000,,
+"J. DeYoung, S. Jain, N. F. Rajani, E. Lehman, C. Xiong, R. Socher, and B. C. Wallace. ERASER: A benchmark
+to evaluate rationalized NLP models.",2019-11-08,https://arxiv.org/abs/1911.03429v1,,bert-base,120000000,,
+"K. Clark, U. Khandelwal, O. Levy, and C. D. Manning. What does BERT look at? an analysis of BERT’s
+attention.",2019-06-11,https://arxiv.org/abs/1906.04341,,bert-base,110000000,,
+"Y. Bondarenko, M. Nagel, and T. Blankevoort. Quantizable transformers: Removing outliers by helping attention heads do nothing. ",2023-06-22,https://arxiv.org/abs/2306.12929,bert,BERT-base-uncased,110000000,notes,
+"N. Belrose, D. Schneider-Joseph, S. Ravfogel, R. Cotterell, E. Raff, and S. Biderman. LEACE: Perfect linear
+concept erasure in closed form.",2023-06-06,https://arxiv.org/abs/2306.03819,bert,BERT-base-uncased,110000000,,
+"A. Geiger, Z. Wu, C. Potts, T. Icard, and N. D. Goodman. Finding alignments between interpretable causal
+variables and distributed neural representations.",2023-03-05,https://arxiv.org/abs/2303.02536,bert,BERT-base-uncased,110000000,,
+"T. Mickus, D. Paperno, and M. Constant. How to dissect a Muppet: The structure of transformer embedding
+spaces.",2022-06-07,https://arxiv.org/abs/2206.03529,,bert-based-uncased,110000000,"some of the other BERT papers may have used bert-based-uncased, one of the smaller versions, as well. They have typically been slightly unclear about it.",
 "G. Kobayashi, T. Kuribayashi, S. Yokoi, and K. Inui. Analyzing feed-forward blocks in transformers through
-the lens of attention map. In The Twelfth International Conference on Learning Representations, 2024. URL
-https://openreview.net/forum?id=mYWsyTuiRp.",2024,https://openreview.net/forum?id=mYWsyTuiRp,bert,BERT-large,340000000,"but also many other smaller models, incl. 5 other variants of BERT and GPT-2-small",
-"J. Merullo, C. Eickhoff, and E. Pavlick. Circuit component reuse across tasks in transformer language models.
-In The Twelfth International Conference on Learning Representations, 2024. URL https://openreview
-.net/forum?id=fpoAYV6Wsk.",2024,https://openreview.net/forum?id=fpoAYV6Wsk,gpt-2,GPT2-Medium,355000000,,
-"G. Sarti, G. Chrupała, M. Nissim, and A. Bisazza. Quantifying the plausibility of context reliance in neural
-machine translation. In The Twelfth International Conference on Learning Representations (ICLR 2024),
-Vienna, Austria, May 2024. OpenReview. URL https://openreview.net/forum?id=XTHfNGI3zT.",2024,https://openreview.net/forum?id=XTHfNGI3zT,,MBART,680000000,,
-"C. Neo, S. B. Cohen, and F. Barez. Interpreting context look-ups in transformers: Investigating attention-mlp
-interactions, 2024. URL https://arxiv.org/abs/2402.15055.",2024,https://arxiv.org/abs/2402.15055,gpt-2,gpt-2 large,774000000,,"♡Apart Research
-♢School of Informatics, University of Edinburgh
-♣Department of Engineering Sciences, University of Oxford
-♠School of Computer Science and Engineering, Nanyang Technological University"
-"S. Rajamanoharan. Progress update 1 from the gdm mech interp team. improving ghost grads. AI Alignment
-Forum, 2024. URL https://www.alignmentforum.org/posts/C5KAZQib3bzzpeyrg/progress-updat
-e-1-from-the-gdm-mech-interp-team-full-update.",2024,https://www.alignmentforum.org/posts/C5KAZQib3bzzpeyrg/progress-update-1-from-the-gdm-mech-interp-team-full-update,,GPT-2-XL,1500000000,,
-"W. Gurnee, T. Horsley, Z. C. Guo, T. R. Kheirkhah, Q. Sun, W. Hathaway, N. Nanda, and D. Bertsimas.
-Universal neurons in gpt2 language models, 2024.",2024,Universal neurons in gpt2 language models,,GPT2-XL,1500000000,,
-"F. Zhang and N. Nanda. Towards best practices of activation patching in language models: Metrics and methods.
-In The Twelfth International Conference on Learning Representations, 2024. URL https://openreview
-.net/forum?id=Hf17y6u9BC.",2024,https://openreview.net/forum?id=Hf17y6u9BC,,GPT-2-XL,1500000000,GPT-small,
-"B. Chughtai, A. Cooney, and N. Nanda. Summing up the facts: Additive mechanisms behind factual recall in
-llms, 2024. URL https://www.arxiv.org/abs/2402.07321.",2024,https://www.arxiv.org/abs/2402.07321,,gpt-2,1610000000,"pythia 2.8b, gpt-j",independent
-"N. Wichers, C. Denison, and A. Beirami. Gradient-based language model red teaming, 2024.",2024,,,,2000000000,LaMDA,
-"Q. Liu, Y. Chai, S. Wang, Y. Sun, K. Wang, and H. Wu. On training data influence of gpt models. Arxiv, 2024.
-URL https://arxiv.org/abs/2404.07840.",2024,https://arxiv.org/abs/2404.07840,,,2800000000,Pythia (range of sizes),
-"Z. Li, N. Zhang, Y. Yao, M. Wang, X. Chen, and H. Chen. Unveiling the pitfalls of knowledge editing for
-large language models. In The Twelfth International Conference on Learning Representations, 2024. URL
-https://openreview.net/forum?id=fNktD3ib16.",2024,https://openreview.net/forum?id=fNktD3ib16,,"GPT2-XL, GPT-J",6000000000,"GPT2-XL, GPT-J",zhejiang university
-"A. Gupta, A. Rao, and G. K. Anumanchipalli. Model editing at scale leads to gradual and catastrophic forgetting. ArXiv, abs/2401.07453, 2024a. URL https://api.semanticscholar.org/CorpusID:266999650.",2024,https://api.semanticscholar.org/CorpusID:266999650,,GPT-J,6000000000,also studied gpt2-xl 1.5b,uc berkeley
-"E. Hernandez, A. S. Sharma, T. Haklay, K. Meng, M. Wattenberg, J. Andreas, Y. Belinkov, and D. Bau. Linearity of relation decoding in transformer language models. In The Twelfth International Conference on
-Learning Representations, 2024. URL https://openreview.net/forum?id=w7LU2s14kE.",2024,https://openreview.net/forum?id=w7LU2s14kE,,GPT-J,6000000000,"in appendix: GPT-2-XL, Llama-13B",
-"Z. Zhao and B. Shan. Reagent: A model-agnostic feature attribution method for generative language models,
-2024.",2024,https://arxiv.org/abs/2402.00794,,OPT-6.7B,6700000000,"GPT-{354M,1.5B,6B}, OPT-{350M,1.3B,6.7B}",University of Sheffield
-"A. Arora, D. Jurafsky, and C. Potts. Causalgym: Benchmarking causal interpretability methods on linguistic
-tasks, 2024. URL https://arxiv.org/abs/2402.12560.",2024,https://arxiv.org/abs/2402.12560,,pythia,6900000000,14M-6.9B,
+the lens of attention map. ",2023-02-01,https://arxiv.org/abs/2302.00456,bert,BERT-large,340000000,"but also many other smaller models, incl. 5 other variants of BERT and GPT-2-small",
+J. Hewitt and C. D. Manning. A structural probe for finding syntax in word representations.,2019-06-01,https://aclanthology.org/N19-1419,,bert-large,340000000,"bert-base (110M9, elmo-base (130M)",
+"I. Tenney, D. Das, and E. Pavlick. BERT rediscovers the classical NLP pipeline.",2019-05-15,https://arxiv.org/abs/1905.05950,,BERT-LARGE,340000000,,
+"A. Y. Din, T. Karidi, L. Choshen, and M. Geva. Jump to conclusions: Short-cutting transformers with linear
+transformations.",2023-03-16,https://arxiv.org/abs/2303.09435,,bert-large-uncased,336000000,also studied gpt-2 and bert-base-uncase,
+"A. Modarressi, M. Fayyaz, Y. Yaghoobzadeh, and M. T. Pilehvar. GlobEnc: Quantifying global token attribution by incorporating the whole encoder layer in transformers. ",2022-05-06,https://arxiv.org/abs/2205.03286,,bert-large-uncased,336000000,also studied bert-base-uncased 110m and electra 335m,
+"A. Rogers, O. Kovaleva, and A. Rumshisky. A Primer in BERTology: What We Know About How BERT
+Works. ",2020-02-27,https://arxiv.org/abs/2002.12327,bert,bert-large-uncased,336000000,,
+"J. Ferrando, G. I. Gállego, I. Tsiamas, and M. R. Costa-jussà. Explaining how transformers use context to
+build predictions. ",2023-05-21,https://arxiv.org/abs/2305.12535,,BLOOM,1100000000,"GPT-2 XL (1.5B) model (Radford et al., 2019), as in (Yin and Neubig, 2022), as well as other autoregressive Transformer language mod- els, such as GPT-2 Small (124M), and GPT-2 Large models (774M), OPT 125M (Zhang et al., 2022b), and BLOOM’s 560M and 1.1B variants",
+"J. Qi, R. Fernández, and A. Bisazza. Cross-lingual consistency of factual knowledge in multilingual language
+models.",2023-10-16,https://arxiv.org/abs/2310.10378,,BLOOM,3000000000,"Previous work on multilingual knowl- edge probing (Jiang et al., 2020; Kassner et al., 2021) focused on encoder-only PLMs, such as mBERT (Devlin et al., 2019) or XLM-RoBERTa (Liu et al., 2019). However, since decoder-only PLMs have become mainstream in the current NLP era, our experiments also include the decoder-only BLOOM series (560m, 1.1b, 1.7b, 3b parameters) (Scao et al., 2022) and the encoder-decoder mT5- large (1.2b) (Xue et al., 2021), in addition to the encoder-only XLM-RoBERTa-large (354m).",
+"J. Merullo, C. Eickhoff, and E. Pavlick. A mechanism for solving relational tasks in transformer language
+models.",2023-05-25,https://arxiv.org/abs/2305.16130,,BLOOM,176000000000,"GPT-2 (all variants), GPT-J",
+"T. McGrath, M. Rahtz, J. Kramar, V. Mikulik, and S. Legg. The hydra effect: Emergent self-repair in language
+model computations.",2023-07-23,https://arxiv.org/abs/2307.15771,,Chinchilla,7000000000,,
+"T. Lieberum, M. Rahtz, J. Kramár, N. Nanda, G. Irving, R. Shah, and V. Mikulik. Does circuit analysis
+interpretability scale? evidence from multiple choice capabilities in chinchilla.",2023-07-18,https://arxiv.org/abs/2307.09458,,Chinchilla,70000000000,Deepmind paper,
+E. Voita and I. Titov. Information-theoretic probing with minimum description length. ,2020-03-27,https://arxiv.org/abs/2003.12298,,ELMo,5500000000,,
+J. Hewitt and P. Liang. Designing and interpreting probes with control tasks. ,2019-09-08,https://arxiv.org/abs/1909.03368,,elmo,130000000,,
+"A. Langedijk, H. Mohebbi, G. Sarti, W. Zuidema, and J. Jumelet. Decoderlens: Layerwise interpretation of
+encoder-decoder transformers.",2023-10-05,https://arxiv.org/abs/2310.03686,,flan-t5,11300000000,"also studied: custom small transformer, nllb-600m and whisper",
 "S. Rajamanoharan, A. Conmy, L. Smith, T. Lieberum, V. Varma, J. Kramár, R. Shah, and N. Nanda. Improving
-dictionary learning with gated sparse autoencoders. ArXiv, 2024.",2024,https://arxiv.org/pdf/2404.16014,,Gemma-7B,7000000000,also used pythia-2.8B and gelu-1l (3.1M),
-"S. Singh, S. Ravfogel, J. Herzig, R. Aharoni, R. Cotterell, and P. Kumaraguru. Mimic: Minimally modified
-counterfactuals in the representation space. Arxiv, 2024c. URL https://arxiv.org/abs/2402.09631.",2024,https://arxiv.org/abs/2402.09631,,LLama2-7b,7000000000,steering method,
-"Y. Jiang, G. Rajendran, P. Ravikumar, B. Aragam, and V. Veitch. On the origins of linear representations in
-large language models, 2024.",2024,https://arxiv.org/abs/2403.03867,,llama-2-7B,7000000000,,"university of chicago, carnegie mellon"
-"Y. Tian, Y. Wang, Z. Zhang, B. Chen, and S. S. Du. JoMA: Demystifying multilayer transformers via joint
-dynamics of MLP and attention. In The Twelfth International Conference on Learning Representations,
-2024. URL https://openreview.net/forum?id=LbJqRGNYCf.",2024,https://openreview.net/forum?id=LbJqRGNYCf,,Pythia-7B,7000000000,"OPT-2.7B, pythia-70M, pythia-1.4B, pythia-7B","meta, university of washington, carnegie mellon, ut austin"
-"Z. Yu and S. Ananiadou. Locating factual knowledge in large language models: Exploring the residual stream
-and analyzing subvalues in vocabulary space, 2024. URL https://arxiv.org/abs/2312.12141.",2024,https://arxiv.org/abs/2312.12141,,llama-7B,7000000000,"GPT2-L, llama-7B",University of Manchester
-"A. Gupta, D. Sajnani, and G. Anumanchipalli. A unified framework for model editing, 2024b.",2024,https://arxiv.org/pdf/2403.14236,,llama-2,7000000000,also studied gpt2-xl 1.5b and gpt-j 6b,uc berkeley
-"A. Lv, K. Zhang, Y. Chen, Y. Wang, L. Liu, J.-R. Wen, J. Xie, and R. Yan. Interpreting key mechanisms of
-factual recall in transformer-based language models. Computing Research Repository, arXiv:2403.19521,
-2024. URL https://arxiv.org/abs/2403.19521.",2024,https://arxiv.org/abs/2403.19521,,Llama-2,7000000000,also studied all size of gpt-2 and 1.3b OPT,"Gaoling School of Artificial Intelligence, Renmin University of China 2 XiaoMi AI Lab 3 Baichuan Inc"
-"G. Paulo, T. Marshall, and N. Belrose. Does transformer interpretability transfer to rnns?, 2024.",2024,https://arxiv.org/pdf/2404.05971,,RWKV v5,7000000000,also incl. 2.7B models,
-"J. Huang, Z. Wu, C. Potts, M. Geva, and A. Geiger. Ravel: Evaluating interpretability methods on disentangling
-language model representations, 2024a. URL https://arxiv.org/abs/2402.17700.",2024,https://arxiv.org/abs/2402.17700,,llama2,7000000000,,
-"J.-C. Gu, H. Xu, J.-Y. Ma, P. Lu, Z.-H. Ling, K. wei Chang, and N. Peng. Model editing can hurt general
-abilities of large language models. ArXiv, abs/2401.04700, 2024. URL https://api.semanticscholar.
-org/CorpusID:266899568.",2024,https://api.semanticscholar.org/CorpusID:266899568,,llama2,7000000000,gpt2-xl,
-"K. Amara, R. Sevastjanova, and M. El-Assady. Syntaxshap: Syntax-aware explainability method for text
-generation. ArXiv, abs/2402.09259, 2024. URL https://api.semanticscholar.org/CorpusID:
-267657673.",2024,https://api.semanticscholar.org/CorpusID:267657673,,mistral,7000000000,gpt2-medium,
-"M. Avitan, R. Cotterell, Y. Goldberg, and S. Ravfogel. What changed? converting representational interventions
-to natural language. Arxiv, 2024. URL https://arxiv.org/abs/2402.11355.",2024,https://arxiv.org/abs/2402.11355,,,7000000000,Mistral7b and GPT2,
-"N. Prakash, T. R. Shaham, T. Haklay, Y. Belinkov, and D. Bau. Fine-tuning enhances existing mechanisms: A
-case study on entity tracking. In The Twelfth International Conference on Learning Representations, 2024.
-URL https://openreview.net/forum?id=8sKcAWOf2D.",2024,https://openreview.net/forum?id=8sKcAWOf2D,,,7000000000,"LLama-7b, Vicuna 7B, Goat-7B, Float-7B",
-"P. Sharma, J. T. Ash, and D. Misra. The truth is in there: Improving reasoning with layer-selective rank
-reduction. In The Twelfth International Conference on Learning Representations, 2024b. URL https:
-//openreview.net/forum?id=ozX92bu8VA.",2024,https://openreview.net/forum?id=ozX92bu8VA,,,7000000000,"roberta, gptj, llama2",
-"R. Achtibat, S. M. V. Hatefi, M. Dreyer, A. Jain, T. Wiegand, S. Lapuschkin, and W. Samek. AttnLRP:
-Attention-aware layer-wise relevance propagation for transformers, 2024.",2024,,,,7000000000,"llama-2-7b, mistral 7b",
-"R. Gould, E. Ong, G. Ogden, and A. Conmy. Successor heads: Recurring, interpretable attention heads in the
-wild. In The Twelfth International Conference on Learning Representations, 2024. URL https://openre
-view.net/forum?id=kvcbV8KQsi.",2024,https://openreview.net/forum?id=kvcbV8KQsi,,,7000000000,"pythia 1.4b, gpt2xl, llama2 7b",
-"J. Kramár, T. Lieberum, R. Shah, and N. Nanda. Atp*: An efficient and scalable method for localizing llm
-behaviour to components, 2024. URL https://arxiv.org/abs/2403.00745.",2024,https://arxiv.org/abs/2403.00745,,Pythia,12000000000,,
-"Y. Kwon, E. Wu, K. Wu, and J. Zou. Datainf: Efficiently estimating data influence in loRA-tuned LLMs
-and diffusion models. In The Twelfth International Conference on Learning Representations, 2024. URL
-https://openreview.net/forum?id=9m02ib92Wz.",2024,https://openreview.net/forum?id=9m02ib92Wz,,Llama-2-13B,13000000000,"RoBERTa-large, Llama-2-13B-chat, stable-diffusion-v-1.5","columbia, stanford"
-"Z. Wu, A. Arora, Z. Wang, A. Geiger, D. Jurafsky, C. D. Manning, and C. Potts. Reft: Representation finetuning
-for language models, 2024b.",2024,https://arxiv.org/abs/2404.03592,,Llama-13B,13000000000,"Llama-7B, Llama-13B, Llama-2-7B, Llama-3-8B, RoBERTa-base, RoBERTa-large","Stanford, Pr(AI)^2R Group"
-"A. Ghandeharioun, A. Caciularu, A. Pearce, L. Dixon, and M. Geva. Patchscopes: A unifying framework for
-inspecting hidden representations of language models. Arxiv, 2024. URL https://arxiv.org/abs/2401
-.06102v2.",2024,https://arxiv.org/abs/2401.06102v2,,llama-2,13000000000,"also studied vicuna 13b, gpt-j 6b and pythia 12b","google research, tel aviv university"
+dictionary learning with gated sparse autoencoders. ",2024-04-24,https://arxiv.org/abs/2404.16014,,Gemma-7B,7000000000,also used pythia-2.8B and gelu-1l (3.1M),
+"B. Chughtai, A. Cooney, and N. Nanda. Summing up the facts: Additive mechanisms behind factual recall in
+llms.",2024-02-11,https://arxiv.org/abs/2402.07321,,gpt-2,1610000000,"pythia 2.8b, gpt-j",
+"C. Tigges, O. J. Hollinsworth, A. Geiger, and N. Nanda. Linear representations of sentiment in large language
+models.",2023-10-23,https://arxiv.org/abs/2310.15154,,gpt-2,137000000,pythia 85m to 2.8b,
+"C. Guerner, A. Svete, T. Liu, A. Warstadt, and R. Cotterell. A geometric notion of causal probing.",2023-07-23,https://arxiv.org/abs/2307.15054,,gpt-2,774000000,,
+B. Millidge and E. Winsor. Basic facts about language model internals. ,2023-01-04,https://www.alignmentforum.org/posts/PDLfpRwSynu73mxGw/basic-facts-about-language-model-internals-1,,gpt-2,1610000000,,
+B. Millidge and S. Black. The singular value decompositions of transformer weight matrices are highly interpretable. ,2022-11-28,https://www.alignmentforum.org/posts/mkbGjzxD8d8XqKHzA/the-singular-value-decompositions-of-transformer-weight,,gpt-2,774000000,notes,
+"Z. Wu, K. D’Oosterlinck, A. Geiger, A. Zur, and C. Potts. Causal proxy models for concept-based model explanations.",2022-09-28,https://arxiv.org/abs/2209.14279,,GPT-2,1500000000,"bert-base-uncased, RoBERTa-base, gpt-2",
+"B. Hoover, H. Strobelt, and S. Gehrmann. exBERT: A Visual Analysis Tool to Explore Learned Representations
+in Transformer Models.",2019-10-11,https://arxiv.org/abs/1910.05276,,gpt-2,137000000,BERT,(date from arxiv)
+"C. Neo, S. B. Cohen, and F. Barez. Interpreting context look-ups in transformers: Investigating attention-mlp
+interactions.",2024-02-23,https://arxiv.org/abs/2402.15055,gpt-2,gpt-2 large,774000000,,
+"A. Haviv, I. Cohen, J. Gidron, R. Schuster, Y. Goldberg, and M. Geva. Understanding transformer memorization
+recall through idioms.",2022-10-07,https://arxiv.org/abs/2210.03588,,gpt-2 medium,355000000,"also studied ROBERTA-BASE 125m, T5-BASE 223m, ELECTRA-BASE-GENERATOR 110m",
+"A. Syed, C. Rager, and A. Conmy. Attribution patching outperforms automated circuit discovery.",2023-10-16,https://arxiv.org/abs/2310.10348,,gpt-2 small,124000000,,
+"A. Conmy, A. Mavor-Parker, A. Lynch, S. Heimersheim, and A. Garriga-Alonso. Towards automated circuit
+discovery for mechanistic interpretability. ",2023-04-28,https://arxiv.org/abs/2304.14997,,gpt-2 small,124000000,,
+N. Nanda. Attribution patching: Activation patching at industrial scale.,2023-02-04,https://www.neelnanda.io/mechanistic-interpretability/attribution-patching,gpt-2,gpt-2 small,124000000,,
+"G. Dar, M. Geva, A. Gupta, and J. Berant. Analyzing transformers in embedding space.",2022-09-06,https://arxiv.org/abs/2209.02535,,GPT-2-medium,355000000,,
+"C. Kissane, R. Krzyzanowski, A. Conmy, and N. Nanda. Attention saes scale to gpt-2 small. ",2024-02-03,https://www.alignmentforum.org/posts/FSTRedtjuHa4Gfdbr/attention-saes-scale-to-gpt-2-small,gpt-2,gpt-2-small,124000000,,
+"C. McDougall, A. Conmy, C. Rushing, T. McGrath, and N. Nanda. Copy suppression: Comprehensively
+understanding an attention head.",2023-10-06,https://arxiv.org/abs/2310.04625,,gpt-2-small,124000000,,
+S. Rajamanoharan. Progress update 1 from the gdm mech interp team. improving ghost grads.,2024-04-19,https://www.alignmentforum.org/posts/C5KAZQib3bzzpeyrg/progress-update-1-from-the-gdm-mech-interp-team-full-update,,GPT-2-XL,1500000000,,
+"F. Zhang and N. Nanda. Towards best practices of activation patching in language models: Metrics and methods.
+",2023-09-27,https://arxiv.org/abs/2309.16042,,GPT-2-XL,1500000000,GPT-small,
+"J. Huang, A. Geiger, K. D’Oosterlinck, Z. Wu, and C. Potts. Rigorously assessing natural language explanations
+of neurons.",2023-09-19,https://arxiv.org/abs/2309.10312,,gpt-2-xl,1500000000,,
+"G. Kobayashi, T. Kuribayashi, S. Yokoi, and K. Inui. Transformer language models handle word frequency
+in prediction head.",2023-05-23,https://arxiv.org/abs/2305.18294,,gpt-2-xl,1500000000,"gpt-2-small to -large, bert-base and -large",
+"A. Gupta, A. Rao, and G. K. Anumanchipalli. Model editing at scale leads to gradual and catastrophic forgetting. ",2024-01-15,https://arxiv.org/abs/2401.07453,,GPT-J,6000000000,also studied gpt2-xl 1.5b,
+"E. Hernandez, A. S. Sharma, T. Haklay, K. Meng, M. Wattenberg, J. Andreas, Y. Belinkov, and D. Bau. Linearity of relation decoding in transformer language models. ",2023-08-17,https://arxiv.org/abs/2308.09124,,GPT-J,6000000000,"in appendix: GPT-2-XL, Llama-13B",
+"B. Deiseroth, M. Deb, S. Weinbach, M. Brack, P. Schramowski, and K. Kersting. Atman: Understanding transformer predictions through memory efficient attention manipulation.",2023-01-19,https://arxiv.org/abs/2301.08110,,gpt-j,6000000000,,
+"K. Meng, A. S. Sharma, A. J. Andonian, Y. Belinkov, and D. Bau. Mass-editing memory in a transformer.",2022-10-13,https://arxiv.org/abs/2210.07229,,GPT-NeoX,20000000000,GPT-J (6B) and GPT-NeoX (20B),
+"Y. Yao, P. Wang, B. Tian, S. Cheng, Z. Li, S. Deng, H. Chen, and N. Zhang. Editing large language models:
+Problems, methods, and opportunities.",2023-05-22,https://arxiv.org/abs/2305.13172,,GPT-NEOX-20B,20000000000,"T5-XL, GPT-J, OPT-13B, GPT-NEOX-20B",
+"S. Katz, Y. Belinkov, M. Geva, and L. Wolf. Backward lens: Projecting language model gradients into the
+vocabulary space.",2024-02-20,https://arxiv.org/abs/2402.12865,gpt-2,GPT2,330000000,"I'm quoting the parameter count they mention in the paper, but everyone seems to think gpt2-medium has a different number of parameters.",
+S. Katz and Y. Belinkov. VISIT: Visualizing and interpreting the semantic information flow of transformers.,2023-05-22,https://arxiv.org/abs/2305.13417,,GPT2,355000000,,
+"W. Rudman, C. Chen, and C. Eickhoff. Outlier dimensions encode task specific knowledge.",2023-10-26,https://arxiv.org/abs/2310.17715,,GPT2,410000000,"GPT2, BERT, ALBERT, DistilBERT, Pythia-70M, Pythia-160M, Pythia-410M",
+"W. Timkey and M. van Schijndel. All bark and no bite: Rogue dimensions in transformer language models
+obscure representational quality. ",2021-09-09,https://arxiv.org/abs/2109.04404,,GPT2,117000000,"BERT, RoBERTa, GPT-2, XLNet (gpt2, xlnet-base-cased, bert-base-cased, roberta-base)",
+"X. Suau, L. Zappella, and N. Apostoloff. Self-conditioning pre-trained language models.",2021-09-30,https://arxiv.org/abs/2110.02802,,GPT2-L,774000000,,
+"X. Suau, L. Zappella, and N. Apostoloff. Finding experts in transformer models.",2020-05-15,https://arxiv.org/abs/2005.07647,,GPT2-L,774000000,"RoBERTa-L, Distilbert, XLM, Bert-B, GPT2-S, Bert-L, GPT2-M",
+"J. Merullo, C. Eickhoff, and E. Pavlick. Circuit component reuse across tasks in transformer language models.",2023-10-12,https://arxiv.org/abs/2310.08744,gpt-2,GPT2-Medium,355000000,,
+W. Gurnee. Sae reconstruction errors are (empirically) pathological. ,2024-03-29,https://www.alignmentforum.org/posts/rZPiuFxESMxCDHe4B/sae-reconstruction-errors-are-empirically-pathological,gpt-2,GPT2-small,124000000,,
+"M. Hanna, S. Pezzelle, and Y. Belinkov. Have faith in faithfulness: Going beyond circuit overlap when finding
+model mechanisms.",2024-03-26,https://arxiv.org/abs/2403.17806,gpt-2,gpt2-small,124000000,,
+J. Bloom and J. Lin. Understanding SAE features with the logit lens. ,2024-03-10,https://www.alignmentforum.org/posts/qykrYY6rXXM7EEs8Q/understanding-sae-features-with-the-logit-lens,gpt-2,gpt2-small,124000000,,
+"R. Krzyzanowski, C. Kissane, A. Conmy, and N. Nanda. We inspected every head in GPT-2 small using saes
+so you don’t have to.",2024-03-06,https://www.alignmentforum.org/posts/xmegeW5mqiBsvoaim/we-inspected-every-head-in-gpt-2-small-using-saes-so-you-don,gpt-2,gpt2-small,124000000,,
+J. Bloom. Open source sparse autoencoders for all residual stream layers of GPT2 small. ,2024-02-02,https://www.alignmentforum.org/posts/f9EgfLSurAiqRJySD/open-source-sparse-autoencoders-for-all-residual-stream,gpt-2,gpt2-small,124000000,,
+"Z. Wu, A. Geiger, J. Huang, A. Arora, T. Icard, C. Potts, and N. D. Goodman. A reply to makelov et al. (2023)’s
+""interpretability illusion"" arguments.",2024-01-23,https://arxiv.org/abs/2401.12631,,GPT2-small,124000000,,
+"K. Ethayarajh. How contextual are contextualized word representations? Comparing the geometry of BERT,
+ELMo, and GPT-2 embeddings. ",2019-09-02,https://arxiv.org/abs/1909.00512,,gpt2-small,124000000,"BERT, ELMo, and GPT-2",
+J. Vig. A multiscale visualization of attention in the transformer model. ,2019-06-12,https://arxiv.org/abs/1906.05714,,gpt2-small,124000000,bert-base,
+"I. Tenney, P. Xia, B. Chen, A. Wang, A. Poliak, R. T. McCoy, N. Kim, B. V. Durme, S. Bowman, D. Das,
+and E. Pavlick. What do you learn from context? probing for sentence structure in contextualized word
+representations. ",2019-05-15,https://arxiv.org/abs/1905.06316,,gpt2-small,124000000,"CoVe, ELMo, GPT, and BERT",
+"W. Gurnee, T. Horsley, Z. C. Guo, T. R. Kheirkhah, Q. Sun, W. Hathaway, N. Nanda, and D. Bertsimas.
+Universal neurons in gpt2 language models.",2024-01-22,https://arxiv.org/abs/2401.12181,,GPT2-XL,1500000000,,
+"K. Meng, D. Bau, A. Andonian, and Y. Belinkov. Locating and editing factual associations in GPT.",2022-02-10,https://arxiv.org/abs/2202.05262,,gpt2-xl,1500000000,GPT-2 XL (1.5B parameters),
+"J. Vig, S. Gehrmann, Y. Belinkov, S. Qian, D. Nevo, Y. Singer, and S. Shieber. Investigating gender bias in
+language models using causal mediation analysis.",2020-12-6,https://dl.acm.org/doi/10.5555/3495724.3496763,,gpt2-xl,1500000000,"gpt2 small, medium, large, extra-large",
+"Z. Li, N. Zhang, Y. Yao, M. Wang, X. Chen, and H. Chen. Unveiling the pitfalls of knowledge editing for
+large language models.",2023-10-03,https://arxiv.org/abs/2310.02129,,"GPT2-XL, GPT-J",6000000000,"GPT2-XL, GPT-J",
 "C. Chen, K. Liu, Z. Chen, Y. Gu, Y. Wu, M. Tao, Z. Fu, and J. Ye. INSIDE: LLMs’ internal states retain the
-power of hallucination detection. In The Twelfth International Conference on Learning Representations,
-2024b. URL https://openreview.net/forum?id=Zj12nzlQbz.",2024,https://openreview.net/forum?id=Zj12nzlQbz,,Llama,13000000000,llama 7b,1Alibaba Cloud 2Zhejiang University
-"M. Sun, X. Chen, J. Z. Kolter, and Z. Liu. Massive activations in large language models, 2024. URL https:
-//arxiv.org/abs/2402.17762.",2024,https://arxiv.org/abs/2402.17762,,,13000000000,"LLaMA2-7B, LLaMA2-13B, Phi2, Mistral-8x7B, CLIP ViT-L, DINOv2 ViT-L MAE ViT-L",
-"W. Wu, Y. Wang, G. Xiao, H. Peng, and Y. Fu. Retrieval head mechanistically explains long-context factuality.
-Arxiv, 2024a. URL https://arxiv.org/abs/2404.15574.",2024,https://arxiv.org/abs/2404.15574,,Yi-34B,34000000000,"llama2-7b, llama2-13B, mistral-7B, mixtral-8x7B, Yi-6B, Yi-34B, Qwen1.5-14B",
-"Y.-S. Chuang, Y. Xie, H. Luo, Y. Kim, J. R. Glass, and P. He. Dola: Decoding by contrasting layers improves
-factuality in large language models. In The Twelfth International Conference on Learning Representations,
-2024. URL https://openreview.net/forum?id=Th6NyL07na.",2024,https://openreview.net/forum?id=Th6NyL07na,,llama-65B,65000000000,"llama-7B, llama-13B, llama-33B, llama-65B. 65B used for only one figure",
-"T. Tang, W. Luo, H. Huang, D. Zhang, X. Wang, X. Zhao, F. Wei, and J.-R. Wen. Language-specific neurons:
-The key to multilingual capabilities in large language models, 2024. URL https://arxiv.org/abs/2402
-.16438.",2024,https://arxiv.org/abs/2402.16438,,Llama-2,70000000000,"LLama-2 (70E10), llama-2 (7E9), llama-2 (1.3E10), BLOOM (7E9), OPT (6.7E9) Mistral (7E9), Phi-2 (2.7E9)",
-"W. Gurnee and M. Tegmark. Language models represent space and time. In The Twelfth International Conference on Learning Representations, 2024. URL https://openreview.net/forum?id=jE8xbmvFin.",2024,https://openreview.net/forum?id=jE8xbmvFin,,Llama-2,70000000000,llama-2-70B,
-"A. Madsen, S. Chandar, and S. Reddy. Are self-explanations from large language models faithful? ArXiv,
-abs/2401.07927, 2024. URL https://api.semanticscholar.org/CorpusID:266999774.",2024,https://aclanthology.org/2024.findings-acl.19/,,llama-2 ,70000000000,"also studied Llama2 (7B), Falcon (40B, 7B),
-and Mistral (7B)",Mila – Quebec AI Institute 2 Polytechnique Montréal 3 McGill University 4 Canada CIFAR AI Chair 5 Facebook CIFAR AI Chair
+power of hallucination detection. ",2024-02-06,https://arxiv.org/abs/2402.03744,,Llama,13000000000,llama 7b,
+"K. Li, O. Patel, F. Viégas, H. Pfister, and M. Wattenberg. Inference-time intervention: Eliciting truthful answers
+from a language model. ",2023-06-06,https://arxiv.org/abs/2306.03341,,llama,7000000000,,
+"A. Stolfo, Y. Belinkov, and M. Sachan. A mechanistic interpretation of arithmetic reasoning in language
+models using causal mediation analysis.",2023-05-24,https://arxiv.org/abs/2305.15054,,llama,7000000000,also studied gpt-j 6b and pythia 2.8b,
 "E. Todd, M. Li, A. S. Sharma, A. Mueller, B. C. Wallace, and D. Bau. LLMs represent contextual tasks as
-compact function vectors. In The Twelfth International Conference on Learning Representations, 2024.
-URL https://openreview.net/forum?id=AwyxtyMwaG.",2024,https://openreview.net/forum?id=AwyxtyMwaG,,Llama 2,70000000000,"Llama-2 13B and 7B, GPT-J (6B), GPT-NeoX (20B)",
+compact function vectors. ",2023-10-23,https://arxiv.org/abs/2310.15213,,Llama 2,70000000000,"Llama-2 13B and 7B, GPT-J (6B), GPT-NeoX (20B)",
+"Z. Wu, A. Arora, Z. Wang, A. Geiger, D. Jurafsky, C. D. Manning, and C. Potts. Reft: Representation finetuning
+for language models.",2024-04-04,https://arxiv.org/abs/2404.03592,,Llama-13B,13000000000,"Llama-7B, Llama-13B, Llama-2-7B, Llama-3-8B, RoBERTa-base, RoBERTa-large",
+"A. Lv, K. Zhang, Y. Chen, Y. Wang, L. Liu, J.-R. Wen, J. Xie, and R. Yan. Interpreting key mechanisms of
+factual recall in transformer-based language models.",2024-03-28,https://arxiv.org/abs/2403.19521,,Llama-2,7000000000,also studied all size of gpt-2 and 1.3b OPT,
+"A. Gupta, D. Sajnani, and G. Anumanchipalli. A unified framework for model editing.",2024-03-21,https://arxiv.org/abs/2403.14236,,llama-2,7000000000,also studied gpt2-xl 1.5b and gpt-j 6b,
+"T. Tang, W. Luo, H. Huang, D. Zhang, X. Wang, X. Zhao, F. Wei, and J.-R. Wen. Language-specific neurons:
+The key to multilingual capabilities in large language models.",2024-02-26,https://arxiv.org/abs/2402.16438,,Llama-2,70000000000,"LLama-2 (70E10), llama-2 (7E9), llama-2 (1.3E10), BLOOM (7E9), OPT (6.7E9) Mistral (7E9), Phi-2 (2.7E9)",
+"A. Ghandeharioun, A. Caciularu, A. Pearce, L. Dixon, and M. Geva. Patchscopes: A unifying framework for
+inspecting hidden representations of language models.",2024-01-11,https://arxiv.org/abs/2401.06102,,llama-2,13000000000,"also studied vicuna 13b, gpt-j 6b and pythia 12b",
+"K. Park, Y. J. Choe, and V. Veitch. The linear representation hypothesis and the geometry of large language
+models.",2023-11-07,https://arxiv.org/abs/2311.03658,,llama-2,7000000000,,
+A. Azaria and T. Mitchell. The internal state of an LLM knows when it’s lying.,2023-04-26,https://arxiv.org/abs/2304.13734,,llama-2,7000000000,also opt-6.7b,
+W. Gurnee and M. Tegmark. Language models represent space and time.,2023-10-03,https://arxiv.org/abs/2310.02207,,Llama-2,70000000000,llama-2-70B,
+"A. Madsen, S. Chandar, and S. Reddy. Are self-explanations from large language models faithful? ArXiv,
+abs/2401.07927.",2024-01-15,https://arxiv.org/abs/2401.07927,,llama-2 ,70000000000,"also studied Llama2 (7B), Falcon (40B, 7B),
+and Mistral (7B)",
+"A. Variengien and E. Winsor. Look before you leap: A universal emergent decomposition of retrieval tasks in
+language models.",2023-12-13,https://arxiv.org/abs/2312.10091,,llama-2 ,70000000000,"also studied gpt-2, pythia, falcon and llama-2 in all available sizes",
+"Y. Kwon, E. Wu, K. Wu, and J. Zou. Datainf: Efficiently estimating data influence in loRA-tuned LLMs
+and diffusion models.",2023-10-02,https://arxiv.org/abs/2310.00902,,Llama-2-13B,13000000000,"RoBERTa-large, Llama-2-13B-chat, stable-diffusion-v-1.5",
+S. Marks and M. Tegmark. The geometry of truth: Emergent linear structure in large language model representations of true/false datasets.,2023-10-10,https://arxiv.org/abs/2310.06824,,LLama-2-70B,70000000000,Used both llama-2-13B and llama-2-70B,
+"Y. Jiang, G. Rajendran, P. Ravikumar, B. Aragam, and V. Veitch. On the origins of linear representations in
+large language models",2024-03-06,https://arxiv.org/abs/2403.03867,,llama-2-7B,7000000000,,
+"A. Zou, L. Phan, S. Chen, J. Campbell, P. Guo, R. Ren, A. Pan, X. Yin, M. Mazeika, A.-K. Dombrowski,
+S. Goel, N. Li, M. J. Byun, Z. Wang, A. Mallen, S. Basart, S. Koyejo, D. Song, M. Fredrikson, J. Z. Kolter,
+and D. Hendrycks. Representation engineering: A top-down approach to ai transparency.",2023-10-2,https://arxiv.org/abs/2310.01405,,llama-2-chat,70000000000,,
+"A. M. Turner, L. Thiergart, D. Udell, G. Leech, U. Mini, and M. MacDiarmid. Activation addition: Steering
+language models without optimization.",2023-08-20,https://arxiv.org/abs/2308.10248,,llama-3,8000000000,"also studied OPT, GPT-2-xl 1.5b , and GPT-J",
+"Y.-S. Chuang, Y. Xie, H. Luo, Y. Kim, J. R. Glass, and P. He. Dola: Decoding by contrasting layers improves
+factuality in large language models. ",2023-09-07,https://arxiv.org/abs/2309.03883,,llama-65B,65000000000,"llama-7B, llama-13B, llama-33B, llama-65B. 65B used for only one figure",
+"Z. Yu and S. Ananiadou. Locating factual knowledge in large language models: Exploring the residual stream
+and analyzing subvalues in vocabulary space.",2023-12-19,https://arxiv.org/abs/2312.12141,,llama-7B,7000000000,"GPT2-L, llama-7B",
+"H. Chen, C. Vondrick, and C. Mao. Selfie: Self-interpretation of large language model embeddings.",2024-03-16,https://arxiv.org/abs/2403.10949,,llama2,70000000000,,
+"J. Huang, Z. Wu, C. Potts, M. Geva, and A. Geiger. Ravel: Evaluating interpretability methods on disentangling
+language model representations.",2024-02-27,https://arxiv.org/abs/2402.17700,,llama2,7000000000,,
+"J.-C. Gu, H. Xu, J.-Y. Ma, P. Lu, Z.-H. Ling, K. wei Chang, and N. Peng. Model editing can hurt general
+abilities of large language models. ",2024-01-09,https://arxiv.org/abs/2401.04700,,llama2,7000000000,gpt2-xl,
 "G. Monea, M. Peyrard, M. Josifoski, V. Chaudhary, J. Eisner, E. Kıcıman, H. Palangi, B. Patra, and R. West.
-A glitch in the matrix? locating and detecting language model grounding with fakepedia, 2024. URL
-https://arxiv.org/abs/2312.02073.",2024,https://arxiv.org/abs/2312.02073,,llama2,70000000000,"but also not mechanistic interpretability as they evaluate on closed models, too",
-"H. Chen, C. Vondrick, and C. Mao. Selfie: Self-interpretation of large language model embeddings, 2024c.
-URL https://arxiv.org/abs/2403.10949.",2024,https://arxiv.org/abs/2403.10949,,llama2,70000000000,,
-"M. Yuksekgonul, V. Chandrasekaran, E. Jones, S. Gunasekar, R. Naik, H. Palangi, E. Kamar, and B. Nushi.
-Attention satisfies: A constraint-satisfaction lens on factual errors of language models. In The Twelfth
-International Conference on Learning Representations, 2024. URL https://openreview.net/forum?i
-d=gfFVATffPd.",2024,https://openreview.net/forum?id=gfFVATffPd,,,70000000000,"LLama2-7B, LLama2-13B, LLama2-70B",
-"N. Y. Siegel, O.-M. Camburu, N. Heess, and M. Perez-Ortiz. The probabilities also matter: A more faithful
-metric for faithfulness of free-text explanations in large language models, 2024.",2024,,,,70000000000,Llama2-7b llama2-13b llama2-70b,
-"Q. Wang, T. Anikina, N. Feldhus, J. van Genabith, L. Hennig, and S. Möller. Llmcheckup: Conversational
-examination of large language models via interpretability tools, 2024.",2024,,,,70000000000,stable beluga 2-70B,
-"S. Chen, M. Xiong, J. Liu, Z. Wu, T. Xiao, S. Gao, and J. He. In-context sharpness as alerts: An inner
-representation perspective for hallucination mitigation, 2024d.",2024,,,,70000000000,Llama-2 models (chat),
-"A. Arditi, O. Balcells, A. Syed, W. Gurnee, and N. Nanda. Refusal in llms is mediated by a single direction.
-Alignment Forum, 2024. URL https://alignmentforum.org/posts/jGuXSZgv6qfdhMCuJ/refusal-i
-n-llms-is-mediated-by-a-single-direction.",2024,https://alignmentforum.org/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction,,qwen chat,72000000000,"Qwen chat 1.8B, 7B, 14B, 72B
+A glitch in the matrix? locating and detecting language model grounding with fakepedia.",2023-12-04,https://arxiv.org/abs/2312.02073,,llama2,70000000000,"but also not mechanistic interpretability as they evaluate on closed models, too",
+"G. Xiao, Y. Tian, B. Chen, S. Han, and M. Lewis. Efficient streaming language models with attention sinks.
+Arxiv.",2023-09-29,https://arxiv.org/abs/2309.17453,,llama2,70000000000,"Llama-2-[7,13,70]B, Falcon-[7,40]B, Pythia-[2.8,6.9,12]B, and MPT-[7,30]B",
+"S. Singh, S. Ravfogel, J. Herzig, R. Aharoni, R. Cotterell, and P. Kumaraguru. Mimic: Minimally modified
+counterfactuals in the representation space.",2024-02-15,https://arxiv.org/abs/2402.09631,,LLama2-7b,7000000000,steering method,
+"J. Ferrando, G. I. Gállego, B. Alastruey, C. Escolano, and M. R. Costa-jussà. Towards opening the black
+box of neural machine translation: Source and target interpretations of the transformer.",2022-05-23,https://arxiv.org/abs/2205.11631,,M2M,418000000,,
+"G. Sarti, G. Chrupała, M. Nissim, and A. Bisazza. Quantifying the plausibility of context reliance in neural
+machine translation. ",2023-10-02,https://arxiv.org/abs/2310.01188,,MBART,680000000,,
+"K. Amara, R. Sevastjanova, and M. El-Assady. Syntaxshap: Syntax-aware explainability method for text
+generation.",2024-02-14,https://arxiv.org/abs/2402.09259,,mistral,7000000000,gpt2-medium,
+"E. Akyurek, T. Bolukbasi, F. Liu, B. Xiong, I. Tenney, J. Andreas, and K. Guu. Towards tracing knowledge
+in language models back to the training data. ",2022-05-23,https://arxiv.org/abs/2205.11482,,mt5,580000000,,
+"B.-D. Oh and W. Schuler. Token-wise decomposition of autoregressive language model hidden states for
+analyzing model predictions. ",2023-05-17,https://arxiv.org/abs/2305.10614,,opt,125000000,,
+"E. Voita, J. Ferrando, and C. Nalmpantis. Neurons in large language models: Dead, n-gram, positional.",2023-09-09,https://arxiv.org/abs/2309.04827,,OPT,66000000000,studies across all OPT sizes; smallest is 125M,
+"X. L. Li, A. Holtzman, D. Fried, P. Liang, J. Eisner, T. Hashimoto, L. Zettlemoyer, and M. Lewis. Contrastive
+decoding: Open-ended text generation as optimization.",2022-10-27,https://arxiv.org/abs/2210.15097,,OPT-13B,13000000000,"OPT13-13B, OPT-125M",
+Z. Zhao and B. Shan. Reagent: A model-agnostic feature attribution method for generative language models.,2024-02-01,https://arxiv.org/abs/2402.00794,,OPT-6.7B,6700000000,"GPT-{354M,1.5B,6B}, OPT-{350M,1.3B,6.7B}",
+"T. Dettmers, M. Lewis, Y. Belkada, and L. Zettlemoyer. Gpt3.int8(): 8-bit matrix multiplication for transformers at scale.",2022-08-15,https://arxiv.org/abs/2208.07339,,OPT175B,175000000000,sort of cheating because this is the tim dettmers LLM.int8() paper where the whole point was that it was possible to quantize big models,
+J. Ferrando and E. Voita. Information flow routes: Automatically interpreting language models at scale. ,2024-02-27,https://arxiv.org/abs/2403.00824,opt-2,OPT2-small,125000000,and gpt2-small,
+"J. Kramár, T. Lieberum, R. Shah, and N. Nanda. Atp*: An efficient and scalable method for localizing llm
+behaviour to components.",2024-03-01,https://arxiv.org/abs/2403.00745,,Pythia,12000000000,,
+C. Rushing and N. Nanda. Explorations of self-repair in language models.,2024-02-23,https://arxiv.org/abs/2402.15390,pythia,pythia,160000000,,
+"A. Arora, D. Jurafsky, and C. Potts. Causalgym: Benchmarking causal interpretability methods on linguistic
+tasks.",2024-02-19,https://arxiv.org/abs/2402.12560,,pythia,6900000000,14M-6.9B,
+"H. Cunningham, A. Ewart, L. Riggs, R. Huben, and L. Sharkey. Sparse autoencoders find highly interpretable
+features in language models.",2023-09-15,https://arxiv.org/abs/2309.08600,,pythia,410000000,and 110M,
+"S. Marks, C. Rager, E. J. Michaud, Y. Belinkov, D. Bau, and A. Mueller. Sparse feature circuits: Discovering and editing interpretable causal graphs in language models.",2024-03-28,https://arxiv.org/abs/2403.19647,pythia,Pythia-70M,70000000,trained an SAE on pythia-70M activations,
+B. Wright and L. Sharkey. Addressing feature suppression in saes.,2024-02-16,https://www.alignmentforum.org/posts/3JuSjTZyMzaSeTxKk/addressing-feature-suppression-in-saes,pythia,pythia-70m,70000000,,
+"W. Gurnee, N. Nanda, M. Pauly, K. Harvey, D. Troitskii, and D. Bertsimas. Finding neurons in a haystack:
+Case studies with sparse probing.",2023-05-02,https://arxiv.org/abs/2305.01610,,Pythia-7B,6900000000,,
+"Y. Tian, Y. Wang, Z. Zhang, B. Chen, and S. S. Du. JoMA: Demystifying multilayer transformers via joint
+dynamics of MLP and attention.",2023-10-01,https://arxiv.org/abs/2310.00535,,Pythia-7B,7000000000,"OPT-2.7B, pythia-70M, pythia-1.4B, pythia-7B",
+"A. Arditi, O. Balcells, A. Syed, W. Gurnee, and N. Nanda. Refusal in llms is mediated by a single direction.",2024-06-17,https://arxiv.org/abs/2406.11717,qwen,qwen chat,72000000000,"Qwen chat 1.8B, 7B, 14B, 72B
 Gemma instruction-tuned 2B, 7B
 Yi chat 6B, 34B
 Llama-3 instruct 8B, 70B",
-"L. Quirke, L. Heindrich, W. Gurnee, and N. Nanda. Training dynamics of contextual n-grams in language
-models, 2023. URL https://arxiv.org/abs/2311.00863.",2023,https://arxiv.org/abs/2311.00863,,,70000000,Pythia 70M,
-"Y. Bondarenko, M. Nagel, and T. Blankevoort. Quantizable transformers: Removing outliers by helping attention heads do nothing. In Thirty-seventh Conference on Neural Information Processing Systems, 2023. URL
-https://openreview.net/forum?id=sbusw6LD41.",2023,https://openreview.net/forum?id=sbusw6LD41,bert,BERT-base-uncased,110000000,notes,qualcomm
-"A. Geiger, Z. Wu, C. Potts, T. Icard, and N. D. Goodman. Finding alignments between interpretable causal
-variables and distributed neural representations, 2023b. URL https://arxiv.org/abs/2303.02536.",2023,https://arxiv.org/abs/2303.02536,bert,BERT-base-uncased,110000000,,"pr(ai)r group, stanford university"
-"N. Belrose, D. Schneider-Joseph, S. Ravfogel, R. Cotterell, E. Raff, and S. Biderman. LEACE: Perfect linear
-concept erasure in closed form. In Thirty-seventh Conference on Neural Information Processing Systems,
-2023b. URL https://openreview.net/forum?id=awIpKpwTwF.",2023,https://openreview.net/forum?id=awIpKpwTwF,bert,BERT-base-uncased,110000000,,
-"J. Enguehard. Sequential integrated gradients: a simple but effective method for explaining language models. In
-A. Rogers, J. Boyd-Graber, and N. Okazaki (eds.), Findings of the Association for Computational Linguistics: ACL 2023, pp. 7555–7565, Toronto, Canada, July 2023. Association for Computational Linguistics.
-doi: 10.18653/v1/2023.findings-acl.477. URL https://aclanthology.org/2023.findings-acl.477.",2023,https://aclanthology.org/2023.findings-acl.477,,bert-base,120000000,"BERT, DistilBERT and RoBERTa",
-"Z. Wu, A. Geiger, J. Huang, A. Arora, T. Icard, C. Potts, and N. D. Goodman. A reply to makelov et al. (2023)’s
-""interpretability illusion"" arguments, 2024d.",2023,https://arxiv.org/abs/2401.12631,,GPT2-small,124000000,,"Stanford, Pr(AI)^2R Group"
-"A. Conmy, A. Mavor-Parker, A. Lynch, S. Heimersheim, and A. Garriga-Alonso. Towards automated circuit
-discovery for mechanistic interpretability. In A. Oh, T. Neumann, A. Globerson, K. Saenko, M. Hardt, and
-S. Levine (eds.), Advances in Neural Information Processing Systems, volume 36, pp. 16318–16352. Curran
-Associates, Inc., 2023. URL https://papers.nips.cc/paper_files/paper/2023/hash/34e1dbe95d3
-4d7ebaf99b9bcaeb5b2be-Abstract-Conference.html.",2023,https://papers.nips.cc/paper_files/paper/2023/hash/34e1dbe95d34d7ebaf99b9bcaeb5b2be-Abstract-Conference.html,,gpt-2 small,124000000,,"independent, ucl, university of cambridge"
-"A. Syed, C. Rager, and A. Conmy. Attribution patching outperforms automated circuit discovery. Arxiv, 2023.
-URL https://arxiv.org/abs/2310.10348.",2023,https://arxiv.org/abs/2310.10348,,gpt-2 small,124000000,,"University of Maryland, College Park, Independent, Independent"
-"C. McDougall, A. Conmy, C. Rushing, T. McGrath, and N. Nanda. Copy suppression: Comprehensively
-understanding an attention head. Arxiv, 2023. URL https://arxiv.org/abs/2310.04625.",2023,https://arxiv.org/abs/2310.04625,,gpt-2-small,124000000,,"1
-Independent. 2University of Texas at Austin. 3Google DeepMind. †"
-"K. R. Wang, A. Variengien, A. Conmy, B. Shlegeris, and J. Steinhardt. Interpretability in the wild: a circuit
-for indirect object identification in GPT-2 small. In The Eleventh International Conference on Learning
-Representations, 2023a. URL https://openreview.net/forum?id=NpsVSN6o4ul.",2023,https://openreview.net/forum?id=NpsVSN6o4ul,,,124000000,GPT-2 Small,
-"M. Hanna, O. Liu, and A. Variengien. How does GPT-2 compute greater-than?: Interpreting mathematical
-abilities in a pre-trained language model. In A. Oh, T. Neumann, A. Globerson, K. Saenko, M. Hardt, and
-S. Levine (eds.), Advances in Neural Information Processing Systems, volume 36, pp. 76033–76060. Curran
-Associates, Inc., 2023. URL https://papers.nips.cc/paper_files/paper/2023/hash/efbba7719cc
-5172d175240f24be11280-Abstract-Conference.html.",2023,https://papers.nips.cc/paper_files/paper/2023/hash/efbba7719cc5172d175240f24be11280-Abstract-Conference.html,,,124000000,GPT2-small,
-"M. Sakarvadia, A. Khan, A. Ajith, D. Grzenda, N. Hudson, A. Bauer, K. Chard, and I. Foster. Attention lens:
-A tool for mechanistically interpreting the attention head information retrieval mechanism, 2023.",2023,https://arxiv.org/abs/2310.16270,,,124000000,GPT2-small,
-"N. Nanda. Attribution patching: Activation patching at industrial scale. https://www.neelnanda.io/mecha
-nistic-interpretability/attribution-patching, 2023.",2023,https://www.neelnanda.io/mechanistic-interpretability/attribution-patching,,,124000000,gpt-2 small,
-"R. Molina. Traveling words: A geometric interpretation of transformers. Arxiv, 2023. URL https://arxiv.
-org/abs/2309.07315.",2023,https://arxiv.org/abs/2309.07315,,,124000000,gpt2-small,
-"A. Modarressi, M. Fayyaz, E. Aghazadeh, Y. Yaghoobzadeh, and M. T. Pilehvar. DecompX: Explaining transformers decisions by propagating token decomposition. In A. Rogers, J. Boyd-Graber, and N. Okazaki
-(eds.), Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1:
-Long Papers), pp. 2649–2664, Toronto, Canada, July 2023. Association for Computational Linguistics. doi:
-10.18653/v1/2023.acl-long.149. URL https://aclanthology.org/2023.acl-long.149.",2023,https://aclanthology.org/2023.acl-long.149,,roberta-base-uncased,125000000,also studied bert-base-uncased 110m,"1 Center for Information and Language Processing, LMU Munich, Germany
-2 Munich Center for Machine Learning (MCML), Germany 3 University of Tehran, Iran
-4 Tehran Institute for Advanced Studies, Khatam University, Iran"
-"B.-D. Oh and W. Schuler. Token-wise decomposition of autoregressive language model hidden states for
-analyzing model predictions. In A. Rogers, J. Boyd-Graber, and N. Okazaki (eds.), Proceedings of the 61st
-Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp. 10105–
-10117, Toronto, Canada, July 2023. Association for Computational Linguistics. doi: 10.18653/v1/2023.acl
--long.562. URL https://aclanthology.org/2023.acl-long.562.",2023,https://aclanthology.org/2023.acl-long.562,,opt,125000000,,"Department of Linguistics
-The Ohio State University, Department of Linguistics
-The Ohio State University"
-"H. Mohebbi, W. Zuidema, G. Chrupała, and A. Alishahi. Quantifying context mixing in transformers. In
-A. Vlachos and I. Augenstein (eds.), Proceedings of the 17th Conference of the European Chapter of the
-Association for Computational Linguistics, pp. 3378–3400, Dubrovnik, Croatia, May 2023. Association for
-Computational Linguistics. doi: 10.18653/v1/2023.eacl-main.245. URL https://aclanthology.org/2
-023.eacl-main.245.",2023,https://aclanthology.org/2023.eacl-main.245,,roberta-base,125000000,"bert-base, electra-base (110M)",
-"C. Tigges, O. J. Hollinsworth, A. Geiger, and N. Nanda. Linear representations of sentiment in large language
-models. Arxiv, 2023. URL https://arxiv.org/abs/2310.15154.",2023,https://arxiv.org/abs/2310.15154,,gpt-2,137000000,pythia 85m to 2.8b,"♣EleutherAI Institute, ♡SERI MATS, ♠Stanford University, ⋆Pr(Ai)2R Group, ♢Independent"
-"A. Y. Din, T. Karidi, L. Choshen, and M. Geva. Jump to conclusions: Short-cutting transformers with linear
-transformations. Arxiv, 2023. URL https://arxiv.org/abs/2303.09435.",2023,https://arxiv.org/abs/2303.09435,,bert-large-uncased,336000000,also studied gpt-2 and bert-base-uncase,1Hebrew University of Jerusalem 2Tel Aviv University
 "S. Yang, S. Huang, W. Zou, J. Zhang, X. Dai, and J. Chen. Local interpretation of transformer based on linear
-decomposition. In A. Rogers, J. Boyd-Graber, and N. Okazaki (eds.), Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp. 10270–10287, Toronto,
-Canada, July 2023. Association for Computational Linguistics. doi: 10.18653/v1/2023.acl-long.572. URL
-https://aclanthology.org/2023.acl-long.572.",2023,https://aclanthology.org/2023.acl-long.572,,RoBERTa,354000000,math paper but they used roberta for experiments,
-"S. Katz and Y. Belinkov. VISIT: Visualizing and interpreting the semantic information flow of transformers. In
-H. Bouamor, J. Pino, and K. Bali (eds.), Findings of the Association for Computational Linguistics: EMNLP
-2023, pp. 14094–14113, Singapore, December 2023. Association for Computational Linguistics. doi: 10.1
-8653/v1/2023.findings-emnlp.939. URL https://aclanthology.org/2023.findings-emnlp.939.",2023,https://aclanthology.org/2023.findings-emnlp.939,,GPT2,355000000,,
-"A. Haviv, I. Cohen, J. Gidron, R. Schuster, Y. Goldberg, and M. Geva. Understanding transformer memorization
-recall through idioms. In A. Vlachos and I. Augenstein (eds.), Proceedings of the 17th Conference of the
-European Chapter of the Association for Computational Linguistics, pp. 248–264, Dubrovnik, Croatia, May
-2023. Association for Computational Linguistics. doi: 10.18653/v1/2023.eacl-main.19. URL https:
-//aclanthology.org/2023.eacl-main.19.",2023,https://aclanthology.org/2023.eacl-main.19,,gpt-2 medium,355000000,"also studied ROBERTA-BASE 125m, T5-BASE 223m, ELECTRA-BASE-GENERATOR 110m","Tel Aviv University, Wild Moose, Bar-Ilan University. Allen Institute for AI"
-"G. Dar, M. Geva, A. Gupta, and J. Berant. Analyzing transformers in embedding space. In A. Rogers,
-J. Boyd-Graber, and N. Okazaki (eds.), Proceedings of the 61st Annual Meeting of the Association for
-Computational Linguistics (Volume 1: Long Papers), pp. 16124–16170, Toronto, Canada, July 2023.
-Association for Computational Linguistics. doi: 10.18653/v1/2023.acl- long.893. URL https:
-//aclanthology.org/2023.acl-long.893.",2023,https://aclanthology.org/2023.acl-long.893,,GPT-2-medium,355000000,,
-"M. A. Lepori, T. Serre, and E. Pavlick. Uncovering intermediate variables in transformers using circuit probing,
-2023.",2023,https://arxiv.org/pdf/2311.04354,,,355000000,GPT2-Small and GPT2-Medium,
-"W. Rudman, C. Chen, and C. Eickhoff. Outlier dimensions encode task specific knowledge. In H. Bouamor,
-J. Pino, and K. Bali (eds.), Proceedings of the 2023 Conference on Empirical Methods in Natural Language
-Processing, pp. 14596–14605, Singapore, December 2023. Association for Computational Linguistics. doi:
-10.18653/v1/2023.emnlp-main.901. URL https://aclanthology.org/2023.emnlp-main.901.",2023,https://aclanthology.org/2023.emnlp-main.901,,GPT2,410000000,"GPT2, BERT, ALBERT, DistilBERT, Pythia-70M, Pythia-160M, Pythia-410M",
-"H. Cunningham, A. Ewart, L. Riggs, R. Huben, and L. Sharkey. Sparse autoencoders find highly interpretable
-features in language models. Arxiv, 2023. URL https://arxiv.org/abs/2309.08600.",2023,https://arxiv.org/abs/2309.08600,,pythia,410000000,and 110M,
-"N. Durrani, F. Dalvi, and H. Sajjad. Discovering salient neurons in deep nlp models. Journal of Machine
-Learning Research, 24(362):1–40, 2023. URL http://jmlr.org/papers/v24/23-0074.html.",2023,http://jmlr.org/papers/v24/23-0074.html,,xlm-roberta,550000000,"BERT, ROBERTA and XLNET",
-"C. Guerner, A. Svete, T. Liu, A. Warstadt, and R. Cotterell. A geometric notion of causal probing, 2023.",2023,https://arxiv.org/abs/2307.15054,,gpt-2,774000000,,eth zurich
-"J. Ferrando, G. I. Gállego, I. Tsiamas, and M. R. Costa-jussà. Explaining how transformers use context to
-build predictions. In A. Rogers, J. Boyd-Graber, and N. Okazaki (eds.), Proceedings of the 61st Annual
-Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp. 5486–5513, Toronto,
-Canada, July 2023. Association for Computational Linguistics. doi: 10.18653/v1/2023.acl-long.301. URL
-https://aclanthology.org/2023.acl-long.301.",2023,https://aclanthology.org/2023.acl-long.301,,BLOOM,1100000000,"GPT-2 XL (1.5B) model (Radford et al., 2019), as in (Yin and Neubig, 2022), as well as other autoregressive Transformer language mod- els, such as GPT-2 Small (124M), and GPT-2 Large models (774M), OPT 125M (Zhang et al., 2022b), and BLOOM’s 560M and 1.1B variants",
-"Q. Yu, J. Merullo, and E. Pavlick. Characterizing mechanisms for factual recall in language models. In
-H. Bouamor, J. Pino, and K. Bali (eds.), Proceedings of the 2023 Conference on Empirical Methods in
-Natural Language Processing, pp. 9924–9959, Singapore, December 2023a. Association for Computational
-Linguistics. doi: 10.18653/v1/2023.emnlp-main.615. URL https://aclanthology.org/2023.emnlp-m
-ain.615.",2023,https://aclanthology.org/2023.emnlp-main.615,,,1400000000,"pythia, gpt2",
-"Z. Wu, K. D’Oosterlinck, A. Geiger, A. Zur, and C. Potts. Causal proxy models for concept-based model explanations. In Proceedings of the 40th International Conference on Machine Learning, ICML’23. JMLR.org,
-2023a.",2023,https://arxiv.org/abs/2209.14279,,GPT-2,1500000000,"bert-base-uncased, RoBERTa-base, gpt-2",
-"G. Kobayashi, T. Kuribayashi, S. Yokoi, and K. Inui. Transformer language models handle word frequency
-in prediction head. In A. Rogers, J. Boyd-Graber, and N. Okazaki (eds.), Findings of the Association for
-Computational Linguistics: ACL 2023, pp. 4523–4535, Toronto, Canada, July 2023. Association for Computational Linguistics. doi: 10.18653/v1/2023.findings-acl.276. URL https://aclanthology.org/202
-3.findings-acl.276.",2023,https://aclanthology.org/2023.findings-acl.276,,gpt-2-xl,1500000000,"gpt-2-small to -large, bert-base and -large",
-"J. Huang, A. Geiger, K. D’Oosterlinck, Z. Wu, and C. Potts. Rigorously assessing natural language explanations
-of neurons. In Y. Belinkov, S. Hao, J. Jumelet, N. Kim, A. McCarthy, and H. Mohebbi (eds.), Proceedings
-of the 6th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP, pp. 317–331,
-Singapore, December 2023. Association for Computational Linguistics. doi: 10.18653/v1/2023.blackboxn
-lp-1.24. URL https://aclanthology.org/2023.blackboxnlp-1.24.",2023,https://aclanthology.org/2023.blackboxnlp-1.24,,gpt-2-xl,1500000000,,
-"N. Goldowsky-Dill, C. MacLeod, L. Sato, and A. Arora. Localizing model behavior with path patching. Arxiv,
-2023. URL https://arxiv.org/abs/2304.05969.",2023,https://arxiv.org/abs/2304.05969,,,1500000000,"GPT-2 small, GPT2-XL",
-"S. Heimersheim and A. Turner. Residual stream norms grow exponentially over the forward pass. AI Alignment
-Forum, 2023. URL https://www.alignmentforum.org/posts/8mizBCm3dyc432nK8/residual-strea
-m-norms-grow-exponentially-over-the-forward.",2023,https://www.alignmentforum.org/posts/8mizBCm3dyc432nK8/residual-stream-norms-grow-exponentially-over-the-forward,,,1500000000,"gpt2-small, gpt2-xl",
-"B. Millidge and E. Winsor. Basic facts about language model internals. AI Alignment Forum, 2023. URL
-https://www.alignmentforum.org/posts/PDLfpRwSynu73mxGw/basic-facts-about-language-mod
-el-internals-1.",2023,https://www.alignmentforum.org/posts/PDLfpRwSynu73mxGw/basic-facts-about-language-model-internals-1,,gpt-2,1610000000,,Conjecture
-"N. Belrose, Z. Furman, L. Smith, D. Halawi, I. Ostrovsky, L. McKinney, S. Biderman, and J. Steinhardt.
-Eliciting latent predictions from transformers with the tuned lens. Arxiv, 2023a. URL https://arxiv.or
-g/abs/2303.08112.",2023,https://arxiv.org/abs/2303.08112,,,2700000000,GPT2-Neo-2.7B,
-"J. Qi, R. Fernández, and A. Bisazza. Cross-lingual consistency of factual knowledge in multilingual language
-models. In H. Bouamor, J. Pino, and K. Bali (eds.), Proceedings of the 2023 Conference on Empirical
-Methods in Natural Language Processing, pp. 10650–10666, Singapore, December 2023. Association for
-Computational Linguistics. doi: 10.18653/v1/2023.emnlp-main.658. URL https://aclanthology.org
-/2023.emnlp-main.658.",2023,https://aclanthology.org/2023.emnlp-main.658,,BLOOM,3000000000,"Previous work on multilingual knowl- edge probing (Jiang et al., 2020; Kassner et al., 2021) focused on encoder-only PLMs, such as mBERT (Devlin et al., 2019) or XLM-RoBERTa (Liu et al., 2019). However, since decoder-only PLMs have become mainstream in the current NLP era, our experiments also include the decoder-only BLOOM series (560m, 1.1b, 1.7b, 3b parameters) (Scao et al., 2022) and the encoder-decoder mT5- large (1.2b) (Xue et al., 2021), in addition to the encoder-only XLM-RoBERTa-large (354m).",
-"M. Costa-jussà, E. Smith, C. Ropers, D. Licht, J. Maillard, J. Ferrando, and C. Escolano. Toxicity in
-multilingual machine translation at scale. In H. Bouamor, J. Pino, and K. Bali (eds.), Findings of the
-Association for Computational Linguistics: EMNLP 2023, pp. 9570–9586, Singapore, December 2023.
-Association for Computational Linguistics. doi: 10.18653/v1/2023.findings- emnlp.642. URL
-https://aclanthology.org/2023.findings-emnlp.642.",2023,https://aclanthology.org/2023.findings-emnlp.642,,,3300000000,NLLB-200 3.3B,
-"B. Deiseroth, M. Deb, S. Weinbach, M. Brack, P. Schramowski, and K. Kersting. Atman: Understanding transformer predictions through memory efficient attention manipulation. In A. Oh, T. Neumann, A. Globerson,
-K. Saenko, M. Hardt, and S. Levine (eds.), Advances in Neural Information Processing Systems, volume 36,
-pp. 63437–63460. Curran Associates, Inc., 2023. URL https://proceedings.neurips.cc/paper_fil
-es/paper/2023/file/c83bc020a020cdeb966ed10804619664-Paper-Conference.pdf.",2023,https://proceedings.neurips.cc/paper_files/paper/2023/file/c83bc020a020cdeb966ed10804619664-Paper-Conference.pdf,,gpt-j,6000000000,,"1Aleph Alpha 2Technical University Darmstadt
-3Hessian Center for Artificial Intelligence (hessian.AI)
-4German Center for Artificial Intelligence (DFKI) 5LAION"
-"M. Geva, J. Bastings, K. Filippova, and A. Globerson. Dissecting recall of factual associations in autoregressive language models. In H. Bouamor, J. Pino, and K. Bali (eds.), Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, pp. 12216–12235, Singapore, December 2023. Association for Computational Linguistics. doi: 10.18653/v1/2023.emnlp-main.751. URL
-https://aclanthology.org/2023.emnlp-main.751.",2023,https://aclanthology.org/2023.emnlp-main.751,,,6000000000,GPT-2 and GPTJ,
-"P. Hase, M. Bansal, B. Kim, and A. Ghandeharioun. Does localization inform editing? surprising differences in
-causality-based localization vs. knowledge editing in language models. In A. Oh, T. Neumann, A. Globerson,
-K. Saenko, M. Hardt, and S. Levine (eds.), Advances in Neural Information Processing Systems, volume 36,
-pp. 17643–17668. Curran Associates, Inc., 2023. URL https://proceedings.neurips.cc/paper_fil
-es/paper/2023/file/3927bbdcf0e8d1fa8aa23c26f358a281-Paper-Conference.pdf.",2023,https://proceedings.neurips.cc/paper_files/paper/2023/file/3927bbdcf0e8d1fa8aa23c26f358a281-Paper-Conference.pdf,,,6000000000,GPT-J,
-"W. Gurnee, N. Nanda, M. Pauly, K. Harvey, D. Troitskii, and D. Bertsimas. Finding neurons in a haystack:
-Case studies with sparse probing. Transactions on Machine Learning Research, 2023. ISSN 2835-8856.
-URL https://openreview.net/forum?id=JYs1R9IMJr.",2023,https://openreview.net/forum?id=JYs1R9IMJr,,Pythia-7B,6900000000,,
-"T. McGrath, M. Rahtz, J. Kramar, V. Mikulik, and S. Legg. The hydra effect: Emergent self-repair in language
-model computations. Arxiv, 2023. URL https://arxiv.org/abs/2307.15771.",2023,https://arxiv.org/abs/2307.15771,,Chinchilla,7000000000,,
-"Z. Wu, A. Geiger, T. Icard, C. Potts, and N. Goodman. Interpretability at scale: Identifying causal mechanisms
-in alpaca. In A. Oh, T. Neumann, A. Globerson, K. Saenko, M. Hardt, and S. Levine (eds.), Advances in
-Neural Information Processing Systems, volume 36, pp. 78205–78226. Curran Associates, Inc., 2023b. URL
-https://proceedings.neurips.cc/paper_files/paper/2023/file/f6a8b109d4d4fd64c75e94aaf85
-d9697-Paper-Conference.pdf.",2023,https://proceedings.neurips.cc/paper_files/paper/2023/file/f6a8b109d4d4fd64c75e94aaf85d9697-Paper-Conference.pdf,,Alpaca,7000000000,notes,Stanford
-"A. Azaria and T. Mitchell. The internal state of an LLM knows when it’s lying. In H. Bouamor, J. Pino,
-and K. Bali (eds.), Findings of the Association for Computational Linguistics: EMNLP 2023, pp. 967–976,
-Singapore, December 2023. Association for Computational Linguistics. doi: 10.18653/v1/2023.findings-e
-mnlp.68. URL https://aclanthology.org/2023.findings-emnlp.68.",2023,https://aclanthology.org/2023.findings-emnlp.68,,llama-2,7000000000,also opt-6.7b,
-"A. Stolfo, Y. Belinkov, and M. Sachan. A mechanistic interpretation of arithmetic reasoning in language
-models using causal mediation analysis. In H. Bouamor, J. Pino, and K. Bali (eds.), Proceedings of the 2023
-Conference on Empirical Methods in Natural Language Processing, pp. 7035–7052, Singapore, December
-2023a. Association for Computational Linguistics. doi: 10.18653/v1/2023.emnlp-main.435. URL https:
-//aclanthology.org/2023.emnlp-main.435.",2023,https://aclanthology.org/2023.emnlp-main.435,,llama,7000000000,also studied gpt-j 6b and pythia 2.8b,"ETH Zürich, Technion – IIT, Israel"
-"K. Li, O. Patel, F. Viégas, H. Pfister, and M. Wattenberg. Inference-time intervention: Eliciting truthful answers
-from a language model. In Thirty-seventh Conference on Neural Information Processing Systems, 2023a.
-URL https://openreview.net/forum?id=aLLuYpn83y.",2023,https://openreview.net/forum?id=aLLuYpn83y,,llama,7000000000,,
-"K. Park, Y. J. Choe, and V. Veitch. The linear representation hypothesis and the geometry of large language
-models. Arxiv, 2023a. URL https://arxiv.org/abs/2311.03658.",2023,https://arxiv.org/abs/2311.03658,,llama-2,7000000000,,
-"A. M. Turner, L. Thiergart, D. Udell, G. Leech, U. Mini, and M. MacDiarmid. Activation addition: Steering
-language models without optimization, 2023.",2023,https://arxiv.org/abs/2308.10248,,llama-3,8000000000,"also studied OPT, GPT-2-xl 1.5b , and GPT-J","DeepMind, MIRI, University of Bristol, Arb Research, MATS, Anthropic"
-"C. Burns, H. Ye, D. Klein, and J. Steinhardt. Discovering latent knowledge in language models without supervision. In The Eleventh International Conference on Learning Representations, 2023. URL
-https://openreview.net/forum?id=ETKGuby0hcs.",2023,https://openreview.net/forum?id=ETKGuby0hcs,,t5,11000000000,"UnifiedQA, T0, GPT-J, RoBERTa, DeBERTa","UC Berkeley, Peking University, UC Berkeley, UC Berkeley"
-"A. Langedijk, H. Mohebbi, G. Sarti, W. Zuidema, and J. Jumelet. Decoderlens: Layerwise interpretation of
-encoder-decoder transformers. ArXiv, abs/2310.03686, 2023. URL https://api.semanticscholar.org/
-CorpusID:263671583.",2023,https://api.semanticscholar.org/CorpusID:263671583,,flan-t5,11300000000,"also studied: custom small transformer, nllb-600m and whisper","1ILLC, University of Amsterdam 2CSAI, Tilburg University 3CLCG, University of Groningen"
-"X. L. Li, A. Holtzman, D. Fried, P. Liang, J. Eisner, T. Hashimoto, L. Zettlemoyer, and M. Lewis. Contrastive
-decoding: Open-ended text generation as optimization. In A. Rogers, J. Boyd-Graber, and N. Okazaki (eds.),
-Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long
-Papers), pp. 12286–12312, Toronto, Canada, July 2023b. Association for Computational Linguistics. doi:
-10.18653/v1/2023.acl-long.687. URL https://aclanthology.org/2023.acl-long.687.",2023,https://aclanthology.org/2023.acl-long.687,,OPT-13B,13000000000,"OPT13-13B, OPT-125M",
-"S. CH-Wang, B. V. Durme, J. Eisner, and C. Kedzie. Do androids know they’re only dreaming of electric
-sheep?, 2023. URL https://arxiv.org/abs/2312.17249v1.",2023,https://arxiv.org/abs/2312.17249v1,,,13000000000,llama2-13b,
-"Y. Yao, P. Wang, B. Tian, S. Cheng, Z. Li, S. Deng, H. Chen, and N. Zhang. Editing large language models:
-Problems, methods, and opportunities. In H. Bouamor, J. Pino, and K. Bali (eds.), Proceedings of the
-2023 Conference on Empirical Methods in Natural Language Processing, pp. 10222–10240, Singapore,
-December 2023. Association for Computational Linguistics. doi: 10.18653/v1/2023.emnlp-main.632. URL
-https://aclanthology.org/2023.emnlp-main.632.",2023,https://aclanthology.org/2023.emnlp-main.632,,GPT-NEOX-20B,20000000000,"T5-XL, GPT-J, OPT-13B, GPT-NEOX-20B","zhejiang university, national university of singapore"
-"K. Meng, A. S. Sharma, A. J. Andonian, Y. Belinkov, and D. Bau. Mass-editing memory in a transformer. In
-The Eleventh International Conference on Learning Representations, 2023. URL https://openreview.n
-et/forum?id=MkbcAHIYgyS.",2023,https://openreview.net/forum?id=MkbcAHIYgyS,,GPT-NeoX,20000000000,GPT-J (6B) and GPT-NeoX (20B),
-"R. Hendel, M. Geva, and A. Globerson. In-context learning creates task vectors. Arxiv, 2023. URL https:
-//arxiv.org/abs/2310.15916.",2023,https://arxiv.org/abs/2310.15916,,,30000000000,llama2 30B,
-"E. Voita, J. Ferrando, and C. Nalmpantis. Neurons in large language models: Dead, n-gram, positional. Arxiv,
-2023. URL https://arxiv.org/abs/2309.04827.",2023,https://arxiv.org/abs/2309.04827,,OPT,66000000000,studies across all OPT sizes; smallest is 125M,
-"S. Marks and M. Tegmark. The geometry of truth: Emergent linear structure in large language model representations of true/false datasets, 2023. URL https://arxiv.org/abs/2310.06824.",2023,https://arxiv.org/abs/2310.06824,,LLama-2-70B,70000000000,Used both llama-2-13B and llama-2-70B,
-"T. Lieberum, M. Rahtz, J. Kramár, N. Nanda, G. Irving, R. Shah, and V. Mikulik. Does circuit analysis
-interpretability scale? evidence from multiple choice capabilities in chinchilla. Arxiv, 2023. URL https:
-//arxiv.org/abs/2307.09458.",2023,https://arxiv.org/abs/2307.09458,,Chinchilla,70000000000,Deepmind paper,
-"A. Variengien and E. Winsor. Look before you leap: A universal emergent decomposition of retrieval tasks in
-language models, 2023. URL https://arxiv.org/abs/2312.10091.",2023,https://arxiv.org/abs/2312.10091,,llama-2 ,70000000000,"also studied gpt-2, pythia, falcon and llama-2 in all available sizes","École Normale Supérieure de Lyon,
-École Polytechnique Fédérale de Lausanne, Conjecture"
-"A. Zou, L. Phan, S. Chen, J. Campbell, P. Guo, R. Ren, A. Pan, X. Yin, M. Mazeika, A.-K. Dombrowski,
-S. Goel, N. Li, M. J. Byun, Z. Wang, A. Mallen, S. Basart, S. Koyejo, D. Song, M. Fredrikson, J. Z. Kolter,
-and D. Hendrycks. Representation engineering: A top-down approach to ai transparency. Arxiv, 2023. URL
-https://arxiv.org/abs/2310.01405.",2023,https://arxiv.org/abs/2310.01405,,llama-2-chat,70000000000,,"1Center for AI Safety
-2Carnegie Mellon University
-3UC Berkeley
-4Stanford University
-5EleutherAI
-6University of Maryland
-7Cornell University
-8University of Pennsylvania
-9University of Illinois Urbana-Champaign"
-"G. Xiao, Y. Tian, B. Chen, S. Han, and M. Lewis. Efficient streaming language models with attention sinks.
-Arxiv, 2023. URL https://arxiv.org/abs/2309.17453.",2023,https://arxiv.org/abs/2309.17453,,llama2,70000000000,"Llama-2-[7,13,70]B, Falcon-[7,40]B, Pythia-[2.8,6.9,12]B, and MPT-[7,30]B",
-"J. Merullo, C. Eickhoff, and E. Pavlick. A mechanism for solving relational tasks in transformer language
-models, 2023. URL https://arxiv.org/abs/2305.16130.",2023,https://arxiv.org/abs/2305.16130,,BLOOM,176000000000,"GPT-2 (all variants), GPT-J",
-"N. Varshney, W. Yao, H. Zhang, J. Chen, and D. Yu. A stitch in time saves nine: Detecting and mitigating
-hallucinations of llms by validating low-confidence generation, 2023. URL https://arxiv.org/abs/23
-07.03987.",2023,https://arxiv.org/abs/2307.03987,,,,gpt 3.5,
-"T. Mickus, D. Paperno, and M. Constant. How to dissect a Muppet: The structure of transformer embedding
-spaces. Transactions of the Association for Computational Linguistics, 10:981–996, 2022. doi: 10.1162/ta
-cl_a_00501. URL https://aclanthology.org/2022.tacl-1.57.",2022,https://aclanthology.org/2022.tacl-1.57,,bert-based-uncased,110000000,"some of the other BERT papers may have used bert-based-uncased, one of the smaller versions, as well. They have typically been slightly unclear about it.",
-"A. Geiger, Z. Wu, H. Lu, J. Rozner, E. Kreiss, T. Icard, N. D. Goodman, and C. Potts. Inducing causal structure
-for interpretable neural networks, 2022. URL https://arxiv.org/abs/2112.00826.",2022,https://arxiv.org/abs/2112.00826,,bert,110000000,,stanford
-"D. Dai, L. Dong, Y. Hao, Z. Sui, B. Chang, and F. Wei. Knowledge neurons in pretrained transformers. In S. Muresan, P. Nakov, and A. Villavicencio (eds.), Proceedings of the 60th Annual Meeting of
-the Association for Computational Linguistics (Volume 1: Long Papers), pp. 8493–8502, Dublin, Ireland,
-May 2022. Association for Computational Linguistics. doi: 10.18653/v1/2022.acl-long.581. URL
-https://aclanthology.org/2022.acl-long.581.",2022,https://aclanthology.org/2022.acl-long.581,,bert,110000000,,"†MOE Key Lab of Computational Linguistics, Peking University
-‡Microsoft Research"
-"J. Bastings, S. Ebert, P. Zablotskaia, A. Sandholm, and K. Filippova. “will you find these shortcuts?” a
-protocol for evaluating the faithfulness of input salience methods for text classification. In Y. Goldberg,
-Z. Kozareva, and Y. Zhang (eds.), Proceedings of the 2022 Conference on Empirical Methods in Natural
-Language Processing, pp. 976–991, Abu Dhabi, United Arab Emirates, December 2022. Association for
-Computational Linguistics. doi: 10.18653/v1/2022.emnlp-main.64. URL https://aclanthology.org/2
-022.emnlp-main.64.",2022,https://aclanthology.org/2022.emnlp-main.64,,bert-base,110000000,,
-"P. Pezeshkpour, S. Jain, S. Singh, and B. Wallace. Combining feature and instance attribution to detect artifacts.
-In S. Muresan, P. Nakov, and A. Villavicencio (eds.), Findings of the Association for Computational Linguistics: ACL 2022, pp. 1934–1946, Dublin, Ireland, May 2022. Association for Computational Linguistics.
-doi: 10.18653/v1/2022.findings-acl.153. URL https://aclanthology.org/2022.findings-acl.153.",2022,https://aclanthology.org/2022.findings-acl.153,,,110000000,BERT,
-"J. Ferrando, G. I. Gállego, and M. R. Costa-jussà. Measuring the mixing of contextual information in the
-transformer. In Y. Goldberg, Z. Kozareva, and Y. Zhang (eds.), Proceedings of the 2022 Conference on
-Empirical Methods in Natural Language Processing, pp. 8698–8714, Abu Dhabi, United Arab Emirates,
-December 2022b. Association for Computational Linguistics. doi: 10.18653/v1/2022.emnlp-main.595.
-URL https://aclanthology.org/2022.emnlp-main.595.",2022,https://aclanthology.org/2022.emnlp-main.595,,bert-base,120000000,"BERT, DistilBERT and RoBERTa",
-"M. Geva, A. Caciularu, K. Wang, and Y. Goldberg. Transformer feed-forward layers build predictions by
-promoting concepts in the vocabulary space. In Y. Goldberg, Z. Kozareva, and Y. Zhang (eds.), Proceedings
-of the 2022 Conference on Empirical Methods in Natural Language Processing, pp. 30–45, Abu Dhabi,
-United Arab Emirates, December 2022b. Association for Computational Linguistics. doi: 10.18653/v1/20
-22.emnlp-main.3. URL https://aclanthology.org/2022.emnlp-main.3.",2022,https://aclanthology.org/2022.emnlp-main.3,,,124000000,WikiLM and GPT2-small,
+decomposition.",2023-07-09,https://aclanthology.org/2023.acl-long.572,,RoBERTa,354000000,math paper but they used roberta for experiments,
+S. Sanyal and X. Ren. Discretized integrated gradients for explaining language models. ,2021-08-31,https://arxiv.org/abs/2108.13654,,RoBERTa,354000000,"they use BERT (3.4E8) DistilBERT (6.6E7), and RoBERTa (3.54E8)",
+"H. Mohebbi, W. Zuidema, G. Chrupała, and A. Alishahi. Quantifying context mixing in transformers.",2023-01-30,https://arxiv.org/abs/2301.12971,,roberta-base,125000000,"bert-base, electra-base (110M)",
 "X. Wang, K. Wen, Z. Zhang, L. Hou, Z. Liu, and J. Li. Finding skill neurons in pre-trained transformer-based
-language models. In Y. Goldberg, Z. Kozareva, and Y. Zhang (eds.), Proceedings of the 2022 Conference on
-Empirical Methods in Natural Language Processing, pp. 11132–11152, Abu Dhabi, United Arab Emirates,
-December 2022. Association for Computational Linguistics. doi: 10.18653/v1/2022.emnlp-main.765. URL
-https://aclanthology.org/2022.emnlp-main.765.",2022,https://aclanthology.org/2022.emnlp-main.765,,RoBERTa-base,125000000,,
+language models. ",2022-11-14,https://arxiv.org/abs/2211.07349,,RoBERTa-base,125000000,,
 "G. Puccetti, A. Rogers, A. Drozd, and F. Dell’Orletta. Outlier dimensions that disrupt transformers are driven by
-frequency. In Y. Goldberg, Z. Kozareva, and Y. Zhang (eds.), Findings of the Association for Computational
-Linguistics: EMNLP 2022, pp. 1286–1304, Abu Dhabi, United Arab Emirates, December 2022. Association
-for Computational Linguistics. doi: 10.18653/v1/2022.findings-emnlp.93. URL https://aclanthology
-.org/2022.findings-emnlp.93.",2022,https://aclanthology.org/2022.findings-emnlp.93,,roberta-base,125000000,bert-base 110M,
-"A. Modarressi, M. Fayyaz, Y. Yaghoobzadeh, and M. T. Pilehvar. GlobEnc: Quantifying global token attribution by incorporating the whole encoder layer in transformers. In M. Carpuat, M.-C. de Marneffe, and
-I. V. Meza Ruiz (eds.), Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pp. 258–271, Seattle, United States,
-July 2022. Association for Computational Linguistics. doi: 10.18653/v1/2022.naacl-main.19. URL
-https://aclanthology.org/2022.naacl-main.19.",2022,https://aclanthology.org/2022.naacl-main.19,,bert-large-uncased,336000000,also studied bert-base-uncased 110m and electra 335m,"Iran University of Science and Technology, Iran 2 University of Tehran, Iran
-3 Tehran Institute for Advanced Studies, Khatam University, Iran"
-"S. Ravfogel, M. Twiton, Y. Goldberg, and R. D. Cotterell. Linear adversarial concept erasure. In K. Chaudhuri,
-S. Jegelka, L. Song, C. Szepesvari, G. Niu, and S. Sabato (eds.), Proceedings of the 39th International
-Conference on Machine Learning, volume 162 of Proceedings of Machine Learning Research, pp. 18400–
-18421. PMLR, 17–23 Jul 2022. URL https://proceedings.mlr.press/v162/ravfogel22a.html.",2022,https://proceedings.mlr.press/v162/ravfogel22a.html,,BERT,340000000,didnt specify whether they used the big or small version of BERT,
-"J. Ferrando, G. I. Gállego, B. Alastruey, C. Escolano, and M. R. Costa-jussà. Towards opening the black
-box of neural machine translation: Source and target interpretations of the transformer. In Y. Goldberg,
-Z. Kozareva, and Y. Zhang (eds.), Proceedings of the 2022 Conference on Empirical Methods in Natural
-Language Processing, pp. 8756–8769, Abu Dhabi, United Arab Emirates, December 2022a. Association for
-Computational Linguistics. doi: 10.18653/v1/2022.emnlp-main.599. URL https://aclanthology.org
-/2022.emnlp-main.599.",2022,https://aclanthology.org/2022.emnlp-main.599,,M2M,418000000,,
-"C. Fierro and A. Søgaard. Factual consistency of multilingual pretrained language models. In S. Muresan,
-P. Nakov, and A. Villavicencio (eds.), Findings of the Association for Computational Linguistics: ACL 2022,
-pp. 3046–3052, Dublin, Ireland, May 2022. Association for Computational Linguistics. doi: 10.18653/v1/
-2022.findings-acl.240. URL https://aclanthology.org/2022.findings-acl.240.",2022,https://aclanthology.org/2022.findings-acl.240,,XLM-RoBERTa,550000000,,University of Copenhagen
-"E. Akyurek, T. Bolukbasi, F. Liu, B. Xiong, I. Tenney, J. Andreas, and K. Guu. Towards tracing knowledge
-in language models back to the training data. In Y. Goldberg, Z. Kozareva, and Y. Zhang (eds.), Findings
-of the Association for Computational Linguistics: EMNLP 2022, pp. 2429–2446, Abu Dhabi, United Arab
-Emirates, December 2022. Association for Computational Linguistics. doi: 10.18653/v1/2022.findings-e
-mnlp.180. URL https://aclanthology.org/2022.findings-emnlp.180.",2022,https://aclanthology.org/2022.findings-emnlp.180,,mt5,580000000,,Google Research †MIT CSAIL
-"E. Mitchell, C. Lin, A. Bosselut, C. D. Manning, and C. Finn. Memory-based model editing at scale. In
-K. Chaudhuri, S. Jegelka, L. Song, C. Szepesvari, G. Niu, and S. Sabato (eds.), Proceedings of the 39th
-International Conference on Machine Learning, volume 162 of Proceedings of Machine Learning Research,
-pp. 15817–15831. PMLR, 17–23 Jul 2022b. URL https://proceedings.mlr.press/v162/mitchell2
-2a.html.",2022,https://proceedings.mlr.press/v162/mitchell22a.html,,T5 large,770000000,"BERT-base (110M), BlenderBot-90M",
-"X. Suau, L. Zappella, and N. Apostoloff. Self-conditioning pre-trained language models. International Conference on Machine Learning, 2022. URL https://proceedings.mlr.press/v162/cuadros22a/cuad
-ros22a.pdf.",2022,https://proceedings.mlr.press/v162/cuadros22a/cuadros22a.pdf,,GPT2-L,774000000,,
-"B. Millidge and S. Black. The singular value decompositions of transformer weight matrices are highly interpretable. AI Alignment Forum, 2022. URL https://www.alignmentforum.org/posts/mkbGjzxD8d8Xq
-KHzA/the-singular-value-decompositions-of-transformer-weight.",2022,https://www.alignmentforum.org/posts/mkbGjzxD8d8XqKHzA/the-singular-value-decompositions-of-transformer-weight,,gpt-2,774000000,notes,Conjecture
-"M. Geva, A. Caciularu, G. Dar, P. Roit, S. Sadde, M. Shlain, B. Tamir, and Y. Goldberg. LM-debugger: An interactive tool for inspection and intervention in transformer-based language models. In W. Che and E. Shutova
-(eds.), Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing: System
-Demonstrations, pp. 12–21, Abu Dhabi, UAE, December 2022a. Association for Computational Linguistics.
-doi: 10.18653/v1/2022.emnlp-demos.2. URL https://aclanthology.org/2022.emnlp-demos.2.",2022,https://aclanthology.org/2022.emnlp-demos.2,,,774000000,GPT2 (Medium and Large),
-"K. Meng, D. Bau, A. Andonian, and Y. Belinkov. Locating and editing factual associations in GPT. In
-S. Koyejo, S. Mohamed, A. Agarwal, D. Belgrave, K. Cho, and A. Oh (eds.), Advances in Neural
-Information Processing Systems, volume 35, pp. 17359–17372. Curran Associates, Inc., 2022. URL
-https://proceedings.neurips.cc/paper_files/paper/2022/hash/6f1d43d5a82a37e89b066
-5b33bf3a182-Abstract-Conference.html.",2022,https://proceedings.neurips.cc/paper_files/paper/2022/hash/6f1d43d5a82a37e89b0665b33bf3a182-Abstract-Conference.html,,gpt2-xl,1500000000,GPT-2 XL (1.5B parameters),
-"K. Yin and G. Neubig. Interpreting language models with contrastive explanations. In Y. Goldberg, Z. Kozareva,
-and Y. Zhang (eds.), Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing, pp. 184–198, Abu Dhabi, United Arab Emirates, December 2022. Association for Computational
-Linguistics. doi: 10.18653/v1/2022.emnlp-main.14. URL https://aclanthology.org/2022.emnlp-mai
-n.14.",2022,https://aclanthology.org/2022.emnlp-main.14,,,2700000000,GPT-2 (1.5B parameters) and GPT-Neo (2.7 B),
-"E. Mitchell, C. Lin, A. Bosselut, C. Finn, and C. D. Manning. Fast model editing at scale. In International
-Conference on Learning Representations, 2022a. URL https://openreview.net/forum?id=0DcZxeWf
-OPt.",2022,https://openreview.net/forum?id=0DcZxeWfOPt,,T5-XXL ,11000000000,"T5-XL (2.8B), GPT-J (6B), GPT-Neo (2.7B), BERT-base (110M), BART-base (139M), distilGPT-2 (82M)",
-"T. Dettmers, M. Lewis, Y. Belkada, and L. Zettlemoyer. Gpt3.int8(): 8-bit matrix multiplication for transformers at scale. In S. Koyejo, S. Mohamed, A. Agarwal, D. Belgrave, K. Cho, and A. Oh (eds.), Advances in
-Neural Information Processing Systems, volume 35, pp. 30318–30332. Curran Associates, Inc., 2022. URL
-https://proceedings.neurips.cc/paper_files/paper/2022/file/c3ba4962c05c49636d4c6206a97
-e9c8a-Paper-Conference.pdf.",2022,https://proceedings.neurips.cc/paper_files/paper/2022/file/c3ba4962c05c49636d4c6206a97e9c8a-Paper-Conference.pdf,,OPT175B,175000000000,sort of cheating because this is the tim dettmers LLM.int8() paper where the whole point was that it was possible to quantize big models,
-"Y. Elazar, S. Ravfogel, A. Jacovi, and Y. Goldberg. Amnesic probing: Behavioral explanation with amnesic
-counterfactuals. Transactions of the Association for Computational Linguistics, 9:160–175, 03 2021. ISSN
-2307-387X. doi: 10.1162/tacl_a_00359. URL https://doi.org/10.1162/tacl_a_00359.",2021,https://doi.org/10.1162/tacl_a_00359,,BERT,110000000,,bar illan university
-"A. Geiger, H. Lu, T. Icard, and C. Potts. Causal abstractions of neural networks. In M. Ranzato, A. Beygelzimer, Y. Dauphin, P. Liang, and J. W. Vaughan (eds.), Advances in Neural Information Processing Systems,
-volume 34, pp. 9574–9586. Curran Associates, Inc., 2021. URL https://proceedings.neurips.cc/pap
-er_files/paper/2021/file/4f5c422f4d49a5a807eda27434231040-Paper.pdf.",2021,https://proceedings.neurips.cc/paper_files/paper/2021/file/4f5c422f4d49a5a807eda27434231040-Paper.pdf,,bert,110000000,also studied a bilstm,stanford
-"H. Chefer, S. Gur, and L. Wolf. Transformer interpretability beyond attention visualization. In Proceedings of
-the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pp. 782–791, June 2021.",2021,https://openaccess.thecvf.com/content/CVPR2021/papers/Chefer_Transformer_Interpretability_Beyond_Attention_Visualization_CVPR_2021_paper.pdf,,BERT-base,110000000,,
-"W. Timkey and M. van Schijndel. All bark and no bite: Rogue dimensions in transformer language models
-obscure representational quality. In M.-F. Moens, X. Huang, L. Specia, and S. W.-t. Yih (eds.), Proceedings
-of the 2021 Conference on Empirical Methods in Natural Language Processing, pp. 4527–4546, Online
-and Punta Cana, Dominican Republic, November 2021. Association for Computational Linguistics. doi:
-10.18653/v1/2021.emnlp-main.372. URL https://aclanthology.org/2021.emnlp-main.372.",2021,https://aclanthology.org/2021.emnlp-main.372,,GPT2,117000000,"BERT, RoBERTa, GPT-2, XLNet (gpt2, xlnet-base-cased, bert-base-cased, roberta-base)",
-"Z. Luo, A. Kulmizev, and X. Mao. Positional artefacts propagate through masked language model embeddings.
-In C. Zong, F. Xia, W. Li, and R. Navigli (eds.), Proceedings of the 59th Annual Meeting of the Association
-for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing
-(Volume 1: Long Papers), pp. 5312–5327, Online, August 2021. Association for Computational Linguistics.
-doi: 10.18653/v1/2021.acl-long.413. URL https://aclanthology.org/2021.acl-long.413.",2021,https://aclanthology.org/2021.acl-long.413,,roberta-base,125000000,"BERT-base, RoBERTa-base","Uppsala University, Fuxi AI Lab"
+frequency. ",2022-05-23,https://arxiv.org/abs/2205.11380,,roberta-base,125000000,bert-base 110M,
 "G. Kobayashi, T. Kuribayashi, S. Yokoi, and K. Inui. Incorporating Residual and Normalization Layers into
-Analysis of Masked Language Models. In M.-F. Moens, X. Huang, L. Specia, and S. W.-t. Yih (eds.),
-Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing, pp. 4547–4568,
-Online and Punta Cana, Dominican Republic, November 2021. Association for Computational Linguistics.
-doi: 10.18653/v1/2021.emnlp-main.373. URL https://aclanthology.org/2021.emnlp-main.373.",2021,https://aclanthology.org/2021.emnlp-main.373,,roberta-base,125000000,bert-base 110M,
+Analysis of Masked Language Models.",2021-09-15,https://arxiv.org/abs/2109.07152,,roberta-base,125000000,bert-base 110M,
+"Z. Luo, A. Kulmizev, and X. Mao. Positional artefacts propagate through masked language model embeddings.
+",2020-11-09,https://arxiv.org/abs/2011.04393,,roberta-base,125000000,"BERT-base, RoBERTa-base",
+"A. Modarressi, M. Fayyaz, E. Aghazadeh, Y. Yaghoobzadeh, and M. T. Pilehvar. DecompX: Explaining transformers decisions by propagating token decomposition.",2023-06-05,https://arxiv.org/abs/2306.02873,,roberta-base-uncased,125000000,also studied bert-base-uncased 110m,
+"G. Paulo, T. Marshall, and N. Belrose. Does transformer interpretability transfer to rnns?",2024-04-09,https://arxiv.org/abs/2404.05971,,RWKV v5,7000000000,also incl. 2.7B models,
+"C. Burns, H. Ye, D. Klein, and J. Steinhardt. Discovering latent knowledge in language models without supervision. In The Eleventh International Conference on Learning Representations.",2022-12-07,https://arxiv.org/abs/2212.03827,,t5,11000000000,"UnifiedQA, T0, GPT-J, RoBERTa, DeBERTa",
+"E. Mitchell, C. Lin, A. Bosselut, C. D. Manning, and C. Finn. Memory-based model editing at scale. ",2022-06-13,https://arxiv.org/abs/2206.06520,,T5 large,770000000,"BERT-base (110M), BlenderBot-90M",
 "W. Merrill, V. Ramanujan, Y. Goldberg, R. Schwartz, and N. A. Smith. Effects of parameter norm growth
-during transformer training: Inductive bias from gradient descent. In M.-F. Moens, X. Huang, L. Specia,
-and S. W.-t. Yih (eds.), Proceedings of the 2021 Conference on Empirical Methods in Natural Language
-Processing, pp. 1766–1781, Online and Punta Cana, Dominican Republic, November 2021. Association for
-Computational Linguistics. doi: 10.18653/v1/2021.emnlp-main.133. URL https://aclanthology.org
-/2021.emnlp-main.133.",2021,https://aclanthology.org/2021.emnlp-main.133,,T5-base,220000000,,
-"M. Geva, R. Schuster, J. Berant, and O. Levy. Transformer feed-forward layers are key-value memories. In M.-
-F. Moens, X. Huang, L. Specia, and S. W.-t. Yih (eds.), Proceedings of the 2021 Conference on Empirical
-Methods in Natural Language Processing, pp. 5484–5495, Online and Punta Cana, Dominican Republic,
-November 2021. Association for Computational Linguistics. doi: 10.18653/v1/2021.emnlp-main.446. URL
-https://aclanthology.org/2021.emnlp-main.446.",2021,https://aclanthology.org/2021.emnlp-main.446,,,247000000,Adaptive inputs model https://openreview.net/pdf?id=ByxZX20qFQ,
-"A. Rogers, O. Kovaleva, and A. Rumshisky. A Primer in BERTology: What We Know About How BERT
-Works. Transactions of the Association for Computational Linguistics, 8:842–866, 01 2021. ISSN 2307-
-387X. doi: 10.1162/tacl_a_00349. URL https://doi.org/10.1162/tacl_a_00349.",2021,https://doi.org/10.1162/tacl_a_00349,,bert-large-uncased,336000000,,"University of Copenhagen, University of
-Massachusetts Lowell"
-"T. Bolukbasi, A. Pearce, A. Yuan, A. Coenen, E. Reif, F. Viégas, and M. Wattenberg. An interpretability illusion
-for BERT, 2021.",2021,https://arxiv.org/pdf/2104.07143,,BERT,340000000,,
-"V. Lal, A. Ma, E. Aflalo, P. Howard, A. Simoes, D. Korat, O. Pereg, G. Singer, and M. Wasserblat. InterpreT: An
-interactive visualization tool for interpreting transformers. In D. Gkatzia and D. Seddah (eds.), Proceedings
-of the 16th Conference of the European Chapter of the Association for Computational Linguistics: System
-Demonstrations, pp. 135–142, Online, April 2021. Association for Computational Linguistics. doi: 10.186
-53/v1/2021.eacl-demos.17. URL https://aclanthology.org/2021.eacl-demos.17.",2021,https://aclanthology.org/2021.eacl-demos.17,,BERT,340000000,,
-"S. Sanyal and X. Ren. Discretized integrated gradients for explaining language models. In M.-F. Moens,
-X. Huang, L. Specia, and S. W.-t. Yih (eds.), Proceedings of the 2021 Conference on Empirical Methods in
-Natural Language Processing, pp. 10285–10299, Online and Punta Cana, Dominican Republic, November
-2021. Association for Computational Linguistics. doi: 10.18653/v1/2021.emnlp-main.805. URL https:
-//aclanthology.org/2021.emnlp-main.805.",2021,https://aclanthology.org/2021.emnlp-main.805,,RoBERTa,354000000,"they use BERT (3.4E8) DistilBERT (6.6E7), and RoBERTa (3.54E8)",
+during transformer training: Inductive bias from gradient descent. ",2020-10-19,https://arxiv.org/abs/2010.09697,,T5-base,220000000,,
+"E. Mitchell, C. Lin, A. Bosselut, C. Finn, and C. D. Manning. Fast model editing at scale.",2021-10-21,https://arxiv.org/abs/2110.11309,,T5-XXL ,11000000000,"T5-XL (2.8B), GPT-J (6B), GPT-Neo (2.7B), BERT-base (110M), BART-base (139M), distilGPT-2 (82M)",
+"N. Varshney, W. Yao, H. Zhang, J. Chen, and D. Yu. A stitch in time saves nine: Detecting and mitigating
+hallucinations of llms by validating low-confidence generation.",2023-07-08,https://arxiv.org/abs/2307.03987,vicuna,vicuna-13b,13000000000,"gpt 3.5, vicuna-13B",
+"N. Durrani, F. Dalvi, and H. Sajjad. Discovering salient neurons in deep nlp models. ",2022-06-27,https://arxiv.org/abs/2206.13288,,xlm-roberta,550000000,"BERT, ROBERTA and XLNET",
+C. Fierro and A. Søgaard. Factual consistency of multilingual pretrained language models. ,2022-03-22,https://arxiv.org/abs/2203.11552,,XLM-RoBERTa,550000000,,
+"W. Wu, Y. Wang, G. Xiao, H. Peng, and Y. Fu. Retrieval head mechanistically explains long-context factuality.",2024-04-24,https://arxiv.org/abs/2404.15574,,Yi-34B,34000000000,"llama2-7b, llama2-13B, mistral-7B, mixtral-8x7B, Yi-6B, Yi-34B, Qwen1.5-14B",
+"Q. Liu, Y. Chai, S. Wang, Y. Sun, K. Wang, and H. Wu. On training data influence of gpt models. ",2024-04-11,https://arxiv.org/abs/2404.07840,,,2800000000,Pythia (range of sizes),
+"N. Y. Siegel, O.-M. Camburu, N. Heess, and M. Perez-Ortiz. The probabilities also matter: A more faithful
+metric for faithfulness of free-text explanations in large language models.",2024-04-04,https://arxiv.org/abs/2404.03189,,,70000000000,Llama2-7b llama2-13b llama2-70b,
+"N. Stoehr, M. Gordon, C. Zhang, and O. Lewis. Localizing paragraph memorization in language models.",2024-03-28,https://arxiv.org/abs/2403.19851,gpt-neo,,125000000,gpt-neo 125m,
+"S. Chen, M. Xiong, J. Liu, Z. Wu, T. Xiao, S. Gao, and J. He. In-context sharpness as alerts: An inner representation perspective for hallucination mitigation.",2024-03-03,https://arxiv.org/abs/2403.01548,,,70000000000,Llama-2 models (chat),
+"M. Sun, X. Chen, J. Z. Kolter, and Z. Liu. Massive activations in large language models.",2024-02-27,https://arxiv.org/abs/2402.17762,,,13000000000,"LLaMA2-7B, LLaMA2-13B, Phi2, Mistral-8x7B, CLIP ViT-L, DINOv2 ViT-L MAE ViT-L",
+"N. Prakash, T. R. Shaham, T. Haklay, Y. Belinkov, and D. Bau. Fine-tuning enhances existing mechanisms: A
+case study on entity tracking. ",2024-02-22,https://arxiv.org/abs/2402.14811,,,7000000000,"LLama-7b, Vicuna 7B, Goat-7B, Float-7B",
+"M. Avitan, R. Cotterell, Y. Goldberg, and S. Ravfogel. What changed? converting representational interventions
+to natural language.",2024-02-17,https://arxiv.org/abs/2402.11355,,,7000000000,Mistral7b and GPT2,
+"R. Achtibat, S. M. V. Hatefi, M. Dreyer, A. Jain, T. Wiegand, S. Lapuschkin, and W. Samek. AttnLRP:
+Attention-aware layer-wise relevance propagation for transformers.",2024-02-08,https://arxiv.org/abs/2402.05602,,,7000000000,"llama-2-7b, mistral 7b",
+"N. Wichers, C. Denison, and A. Beirami. Gradient-based language model red teaming.",2024-01-30,https://arxiv.org/abs/2401.16656,,,2000000000,LaMDA,
+"Q. Wang, T. Anikina, N. Feldhus, J. van Genabith, L. Hennig, and S. Möller. Llmcheckup: Conversational
+examination of large language models via interpretability tools.",2024-01-23,https://arxiv.org/abs/2401.12576,,,70000000000,stable beluga 2-70B,
+"L. Quirke, L. Heindrich, W. Gurnee, and N. Nanda. Training dynamics of contextual n-grams in language
+models.",2023-11-01,https://arxiv.org/abs/2311.00863,,,70000000,Pythia 70M,
+"M. Sakarvadia, A. Khan, A. Ajith, D. Grzenda, N. Hudson, A. Bauer, K. Chard, and I. Foster. Attention lens:
+A tool for mechanistically interpreting the attention head information retrieval mechanism.",2023-10-25,https://arxiv.org/abs/2310.16270,,,124000000,GPT2-small,
+R. Molina. Traveling words: A geometric interpretation of transformers.,2023-09-13,https://arxiv.org/abs/2309.07315,,,124000000,gpt2-small,
+"M. Hanna, O. Liu, and A. Variengien. How does GPT-2 compute greater-than?: Interpreting mathematical
+abilities in a pre-trained language model.",2023-04-30,https://arxiv.org/abs/2305.00586,,,124000000,GPT2-small,
+"M. A. Lepori, T. Serre, and E. Pavlick. Uncovering intermediate variables in transformers using circuit probing.",2023-11-07,https://arxiv.org/abs/2311.04354,,,355000000,GPT2-Small and GPT2-Medium,
+"Q. Yu, J. Merullo, and E. Pavlick. Characterizing mechanisms for factual recall in language models.",2023-10-24,https://arxiv.org/abs/2310.15910,,,1400000000,"pythia, gpt2",
+S. Heimersheim and A. Turner. Residual stream norms grow exponentially over the forward pass.,2023-05-06,https://www.alignmentforum.org/posts/8mizBCm3dyc432nK8/residual-stream-norms-grow-exponentially-over-the-forward,,,1500000000,"gpt2-small, gpt2-xl",
+"N. Goldowsky-Dill, C. MacLeod, L. Sato, and A. Arora. Localizing model behavior with path patching.",2023-04-12,https://arxiv.org/abs/2304.05969,,,1500000000,"GPT-2 small, GPT2-XL",
+"N. Belrose, Z. Furman, L. Smith, D. Halawi, I. Ostrovsky, L. McKinney, S. Biderman, and J. Steinhardt.
+Eliciting latent predictions from transformers with the tuned lens.",2023-03-14,https://arxiv.org/abs/2303.08112,,,2700000000,GPT2-Neo-2.7B,
+"M. Geva, J. Bastings, K. Filippova, and A. Globerson. Dissecting recall of factual associations in autoregressive language models.",2023-04-28,https://arxiv.org/abs/2304.14767,,,6000000000,GPT-2 and GPTJ,
+"P. Hase, M. Bansal, B. Kim, and A. Ghandeharioun. Does localization inform editing? surprising differences in
+causality-based localization vs. knowledge editing in language models.",2023-01-10,https://arxiv.org/abs/2301.04213,,,6000000000,GPT-J,
+"P. Sharma, J. T. Ash, and D. Misra. The truth is in there: Improving reasoning with layer-selective rank
+reduction. ",2023-12-21,https://arxiv.org/abs/2312.13558,,,7000000000,"roberta, gptj, llama2",
+"R. Gould, E. Ong, G. Ogden, and A. Conmy. Successor heads: Recurring, interpretable attention heads in the
+wild. ",2023-12-14,https://arxiv.org/abs/2312.09230,,,7000000000,"pythia 1.4b, gpt2xl, llama2 7b",
+"S. CH-Wang, B. V. Durme, J. Eisner, and C. Kedzie. Do androids know they’re only dreaming of electric
+sheep?.",2023-12-28,https://arxiv.org/abs/2312.17249v1,,,13000000000,llama2-13b,
+"R. Hendel, M. Geva, and A. Globerson. In-context learning creates task vectors.",2023-10-24,https://arxiv.org/abs/2310.15916,,,30000000000,llama2 30B,
+"M. Yuksekgonul, V. Chandrasekaran, E. Jones, S. Gunasekar, R. Naik, H. Palangi, E. Kamar, and B. Nushi.
+Attention satisfies: A constraint-satisfaction lens on factual errors of language models. ",2023-09-26,https://arxiv.org/abs/2309.15098,,,70000000000,"LLama2-7B, LLama2-13B, LLama2-70B",
+"K. R. Wang, A. Variengien, A. Conmy, B. Shlegeris, and J. Steinhardt. Interpretability in the wild: a circuit
+for indirect object identification in GPT-2 small. ",2022-11-01,https://arxiv.org/abs/2211.00593,,,124000000,GPT-2 Small,
+"M. Costa-jussà, E. Smith, C. Ropers, D. Licht, J. Maillard, J. Ferrando, and C. Escolano. Toxicity in
+multilingual machine translation at scale.",2022-10-06,https://arxiv.org/abs/2210.03070,,,3300000000,NLLB-200 3.3B,
+"M. Geva, A. Caciularu, G. Dar, P. Roit, S. Sadde, M. Shlain, B. Tamir, and Y. Goldberg. LM-debugger: An interactive tool for inspection and intervention in transformer-based language models. ",2022-04-26,https://arxiv.org/abs/2204.12130,,,774000000,GPT2 (Medium and Large),
+"M. Geva, A. Caciularu, K. Wang, and Y. Goldberg. Transformer feed-forward layers build predictions by
+promoting concepts in the vocabulary space. ",2022-03-28,https://arxiv.org/abs/2203.14680,,,124000000,WikiLM and GPT2-small,
+K. Yin and G. Neubig. Interpreting language models with contrastive explanations. ,2022-02-21,https://arxiv.org/abs/2202.10419,,,2700000000,GPT-2 (1.5B parameters) and GPT-Neo (2.7 B),
+"P. Pezeshkpour, S. Jain, S. Singh, and B. Wallace. Combining feature and instance attribution to detect artifacts.
+",2021-07-01,https://arxiv.org/abs/2107.00323,,,110000000,BERT,
 "O. Kovaleva, S. Kulshreshtha, A. Rogers, and A. Rumshisky. BERT busters: Outlier dimensions that disrupt
-transformers. In C. Zong, F. Xia, W. Li, and R. Navigli (eds.), Findings of the Association for Computational
-Linguistics: ACL-IJCNLP 2021, pp. 3392–3405, Online, August 2021. Association for Computational Linguistics. doi: 10.18653/v1/2021.findings-acl.300. URL https://aclanthology.org/2021.findings-a
-cl.300.",2021,https://aclanthology.org/2021.findings-acl.300,,,770000000,"ELECTRA, XLNet, BART, GPT2",
+transformers.",2021-05-14,https://arxiv.org/abs/2105.06990,,,770000000,"ELECTRA, XLNet, BART, GPT2",
 "R. Nogueira, Z. Jiang, and J. Lin. Investigating the limitations of transformers with simple arithmetic tasks,
-2021.",2021,,,,770000000,T5 modles (except 11B),
-"N. De Cao, W. Aziz, and I. Titov. Editing factual knowledge in language models. In M.-F. Moens,
-X. Huang, L. Specia, and S. W.-t. Yih (eds.), Proceedings of the 2021 Conference on Empirical Methods
-in Natural Language Processing, pp. 6491–6506, Online and Punta Cana, Dominican Republic, November 2021. Association for Computational Linguistics. doi: 10.18653/v1/2021.emnlp-main.522. URL
-https://aclanthology.org/2021.emnlp-main.522.",2021,https://aclanthology.org/2021.emnlp-main.522,,,558000000000,"BERT (fintuned), BART base",
-"X. Han, B. C. Wallace, and Y. Tsvetkov. Explaining black box predictions and unveiling data artifacts
-through influence functions. In D. Jurafsky, J. Chai, N. Schluter, and J. Tetreault (eds.), Proceedings
-of the 58th Annual Meeting of the Association for Computational Linguistics, pp. 5553–5563, Online,
-July 2020. Association for Computational Linguistics. doi: 10.18653/v1/2020.acl-main.492. URL
-https://aclanthology.org/2020.acl-main.492.",2020,https://aclanthology.org/2020.acl-main.492,,BERT-base,110000000,,
-"A. Geiger, K. Richardson, and C. Potts. Neural natural language inference models partially embed theories
-of lexical entailment and negation. In A. Alishahi, Y. Belinkov, G. Chrupała, D. Hupkes, Y. Pinter, and
-H. Sajjad (eds.), Proceedings of the Third BlackboxNLP Workshop on Analyzing and Interpreting Neural
-Networks for NLP, pp. 163–173, Online, November 2020. Association for Computational Linguistics. doi:
-10.18653/v1/2020.blackboxnlp-1.16. URL https://aclanthology.org/2020.blackboxnlp-1.16.",2020,https://aclanthology.org/2020.blackboxnlp-1.16,,bert,110000000,also studied a bilstm and esim,"stanford, allen institute of ai"
-"G. Brunner, Y. Liu, D. Pascual, O. Richter, M. Ciaramita, and R. Wattenhofer. On identifiability in transformers.
-In International Conference on Learning Representations, 2020. URL https://openreview.net/forum
-?id=BJg1f6EFDB.",2020,https://openreview.net/forum?id=BJg1f6EFDB,,BERT,110000000,,
-"G. Kobayashi, T. Kuribayashi, S. Yokoi, and K. Inui. Attention is not only a weight: Analyzing transformers
-with vector norms. In B. Webber, T. Cohn, Y. He, and Y. Liu (eds.), Proceedings of the 2020 Conference
-on Empirical Methods in Natural Language Processing (EMNLP), pp. 7057–7075, Online, November 2020.
-Association for Computational Linguistics. doi: 10.18653/v1/2020.emnlp-main.574. URL https:
-//aclanthology.org/2020.emnlp-main.574.",2020,https://aclanthology.org/2020.emnlp-main.574,,BERT-base,110000000,,
+2021.",2021-02-25,https://arxiv.org/abs/2102.13019,,,770000000,T5 modles (except 11B),
+"M. Geva, R. Schuster, J. Berant, and O. Levy. Transformer feed-forward layers are key-value memories. ",2020-12-29,https://arxiv.org/abs/2012.14913,,,247000000,Adaptive inputs model https://openreview.net/pdf?id=ByxZX20qFQ,
 "P. Atanasova, J. G. Simonsen, C. Lioma, and I. Augenstein. A diagnostic study of explainability techniques
-for text classification. In B. Webber, T. Cohn, Y. He, and Y. Liu (eds.), Proceedings of the 2020 Conference
-on Empirical Methods in Natural Language Processing (EMNLP), pp. 3256–3274, Online, November 2020.
-Association for Computational Linguistics. doi: 10.18653/v1/2020.emnlp-main.263. URL https:
-//aclanthology.org/2020.emnlp-main.263.",2020,https://aclanthology.org/2020.emnlp-main.263,,,110000000,"CNN, BERT, Transformer, LSTM",
-"J. DeYoung, S. Jain, N. F. Rajani, E. Lehman, C. Xiong, R. Socher, and B. C. Wallace. ERASER: A benchmark
-to evaluate rationalized NLP models. In D. Jurafsky, J. Chai, N. Schluter, and J. Tetreault (eds.), Proceedings
-of the 58th Annual Meeting of the Association for Computational Linguistics, pp. 4443–4458, Online, July
-2020. Association for Computational Linguistics. doi: 10.18653/v1/2020.acl-main.408. URL https:
-//aclanthology.org/2020.acl-main.408.",2020,https://aclanthology.org/2020.acl-main.408,,bert-base,120000000,,
-"nostalgebraist. Interpreting GPT: the logit lens. AI Alignment Forum, 2020. URL https://www.alignmentf
-orum.org/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens.",2020,https://www.alignmentforum.org/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens,,,125000000,Gpt2,
-"B. Hoover, H. Strobelt, and S. Gehrmann. exBERT: A Visual Analysis Tool to Explore Learned Representations
-in Transformer Models. In A. Celikyilmaz and T.-H. Wen (eds.), Proceedings of the 58th Annual Meeting
-of the Association for Computational Linguistics: System Demonstrations, pp. 187–196, Online, July 2020.
-Association for Computational Linguistics. doi: 10.18653/v1/2020.acl-demos.22. URL https://aclant
-hology.org/2020.acl-demos.22.",2020,https://aclanthology.org/2020.acl-demos.22,,gpt-2,137000000,BERT,"IBM Research, IBM Research, Harvard SEAS"
-"T. Pimentel, J. Valvoda, R. H. Maudslay, R. Zmigrod, A. Williams, and R. Cotterell. Information-theoretic
-probing for linguistic structure. In D. Jurafsky, J. Chai, N. Schluter, and J. Tetreault (eds.), Proceedings
-of the 58th Annual Meeting of the Association for Computational Linguistics, pp. 4609–4622, Online, July
-2020. Association for Computational Linguistics. doi: 10.18653/v1/2020.acl-main.420. URL https:
-//aclanthology.org/2020.acl-main.420.",2020,https://aclanthology.org/2020.acl-main.420,,BERT,340000000,also used fastText and one-hot encoding vectors,
+for text classification.",2020-09-25,https://arxiv.org/abs/2009.13295,,,110000000,"CNN, BERT, Transformer, LSTM",
+nostalgebraist. Interpreting GPT: the logit lens.,2020-08-30,https://www.alignmentforum.org/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens,,,125000000,Gpt2,
 "N. De Cao, M. S. Schlichtkrull, W. Aziz, and I. Titov. How do decisions emerge across layers in neural models?
-interpretation with differentiable masking. In B. Webber, T. Cohn, Y. He, and Y. Liu (eds.), Proceedings of
-the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp. 3243–3255,
-Online, November 2020. Association for Computational Linguistics. doi: 10.18653/v1/2020.emnlp-main.
-262. URL https://aclanthology.org/2020.emnlp-main.262.",2020,https://aclanthology.org/2020.emnlp-main.262,,,340000000,"BERT-based, BERTLarge",
-"X. Suau, L. Zappella, and N. Apostoloff. Finding experts in transformer models, 2020.",2020,https://arxiv.org/abs/2005.07647,,GPT2-L,774000000,"RoBERTa-L, Distilbert, XLM, Bert-B, GPT2-S, Bert-L, GPT2-M",
-"J. Vig, S. Gehrmann, Y. Belinkov, S. Qian, D. Nevo, Y. Singer, and S. Shieber. Investigating gender bias in
-language models using causal mediation analysis. In H. Larochelle, M. Ranzato, R. Hadsell, M. Balcan, and
-H. Lin (eds.), Advances in Neural Information Processing Systems, volume 33, pp. 12388–12401. Curran
-Associates, Inc., 2020. URL https://proceedings.neurips.cc/paper/2020/hash/92650b2e9221771
-5fe312e6fa7b90d82-Abstract.html.",2020,https://proceedings.neurips.cc/paper/2020/hash/92650b2e92217715fe312e6fa7b90d82-Abstract.html,,gpt2-xl,1500000000,"gpt2 small, medium, large, extra-large",
-"E. Voita and I. Titov. Information-theoretic probing with minimum description length. In B. Webber, T. Cohn,
-Y. He, and Y. Liu (eds.), Proceedings of the 2020 Conference on Empirical Methods in Natural Language
-Processing (EMNLP), pp. 183–196, Online, November 2020. Association for Computational Linguistics.
-doi: 10.18653/v1/2020.emnlp-main.14. URL https://aclanthology.org/2020.emnlp-main.14.",2020,https://aclanthology.org/2020.emnlp-main.14,,ELMo,5500000000,,
-"K. Clark, U. Khandelwal, O. Levy, and C. D. Manning. What does BERT look at? an analysis of BERT’s
-attention. In T. Linzen, G. Chrupała, Y. Belinkov, and D. Hupkes (eds.), Proceedings of the 2019 ACL
-Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP, pp. 276–286, Florence,
-Italy, August 2019. Association for Computational Linguistics. doi: 10.18653/v1/W19-4828. URL https:
-//aclanthology.org/W19-4828.",2019,https://aclanthology.org/W19-4828,,bert-base,110000000,,
-"O. Kovaleva, A. Romanov, A. Rogers, and A. Rumshisky. Revealing the dark secrets of BERT. In K. Inui,
-J. Jiang, V. Ng, and X. Wan (eds.), Proceedings of the 2019 Conference on Empirical Methods in Natural
-Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLPIJCNLP), pp. 4365–4374, Hong Kong, China, November 2019. Association for Computational Linguistics.
-doi: 10.18653/v1/D19-1445. URL https://aclanthology.org/D19-1445.",2019,https://aclanthology.org/D19-1445,,,110000000,BERT,
-"P. M. Htut, J. Phang, S. Bordia, and S. R. Bowman. Do attention heads in bert track syntactic dependencies?
-Arxiv, 2019. URL https://arxiv.org/abs/1911.12246.",2019,https://arxiv.org/abs/1911.12246,,,110000000,"BERT, Roborta",
-"P. Michel, O. Levy, and G. Neubig. Are sixteen heads really better than one? In H. Wallach, H. Larochelle,
-A. Beygelzimer, F. d'Alché-Buc, E. Fox, and R. Garnett (eds.), Advances in Neural Information Processing
-Systems, volume 32. Curran Associates, Inc., 2019. URL https://proceedings.neurips.cc/paper_fil
-es/paper/2019/file/2c601ad9d2ff9bc8b282670cdd54f69f-Paper.pdf.",2019,https://proceedings.neurips.cc/paper_files/paper/2019/file/2c601ad9d2ff9bc8b282670cdd54f69f-Paper.pdf,,,110000000,BERT,
-"I. Tenney, P. Xia, B. Chen, A. Wang, A. Poliak, R. T. McCoy, N. Kim, B. V. Durme, S. Bowman, D. Das,
-and E. Pavlick. What do you learn from context? probing for sentence structure in contextualized word
-representations. In International Conference on Learning Representations, 2019b. URL https://openre
-view.net/forum?id=SJzSgnRcKX.",2019,https://openreview.net/forum?id=SJzSgnRcKX,,gpt2-small,124000000,"CoVe, ELMo, GPT, and BERT",
-"J. Vig. A multiscale visualization of attention in the transformer model. In M. R. Costa-jussà and E. Alfonseca
-(eds.), Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics: System
-Demonstrations, pp. 37–42, Florence, Italy, July 2019. Association for Computational Linguistics. doi:
-10.18653/v1/P19-3007. URL https://aclanthology.org/P19-3007.",2019,https://aclanthology.org/P19-3007,,gpt2-small,124000000,bert-base,
-"K. Ethayarajh. How contextual are contextualized word representations? Comparing the geometry of BERT,
-ELMo, and GPT-2 embeddings. In K. Inui, J. Jiang, V. Ng, and X. Wan (eds.), Proceedings of the
-2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint
-Conference on Natural Language Processing (EMNLP-IJCNLP), pp. 55–65, Hong Kong, China, November 2019. Association for Computational Linguistics. doi: 10.18653/v1/D19- 1006. URL https:
-//aclanthology.org/D19-1006.",2019,https://aclanthology.org/D19-1006,,gpt2-small,124000000,"BERT, ELMo, and GPT-2",
-"J. Hewitt and P. Liang. Designing and interpreting probes with control tasks. In K. Inui, J. Jiang, V. Ng, and
-X. Wan (eds.), Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing
-and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), pp. 2733–
-2743, Hong Kong, China, November 2019. Association for Computational Linguistics. doi: 10.18653/v1/
-D19-1275. URL https://aclanthology.org/D19-1275.",2019,https://aclanthology.org/D19-1275,,elmo,130000000,,
-"T. McCoy, E. Pavlick, and T. Linzen. Right for the wrong reasons: Diagnosing syntactic heuristics in natural
-language inference. In A. Korhonen, D. Traum, and L. Màrquez (eds.), Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, pp. 3428–3448, Florence, Italy, July 2019. Association
-for Computational Linguistics. doi: 10.18653/v1/P19-1334. URL https://aclanthology.org/P19-1334.",2019,https://aclanthology.org/P19-1334,,BERT,340000000,"used BERT, ESIM, SPINN, and DA. BERT is the only transformer. ESIM is an RNN, SPINN is a TreeRNN, DA is a bag-of-words.",
-"Y. Lin, Y. C. Tan, and R. Frank. Open sesame: Getting inside BERT’s linguistic knowledge. In T. Linzen,
-G. Chrupała, Y. Belinkov, and D. Hupkes (eds.), Proceedings of the 2019 ACL Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP, pp. 241–253, Florence, Italy, August 2019. Association for
-Computational Linguistics. doi: 10.18653/v1/W19-4825. URL https://aclanthology.org/W19-4825.",2019,https://aclanthology.org/W19-4825,,BERT,340000000,notes,yale
-"I. Tenney, D. Das, and E. Pavlick. BERT rediscovers the classical NLP pipeline. In A. Korhonen, D. Traum, and
-L. Màrquez (eds.), Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics,
-pp. 4593–4601, Florence, Italy, July 2019a. Association for Computational Linguistics. doi: 10.18653/v1/
-P19-1452. URL https://aclanthology.org/P19-1452.",2019,https://aclanthology.org/P19-1452,,BERT-LARGE,340000000,,
-"J. Hewitt and C. D. Manning. A structural probe for finding syntax in word representations. In J. Burstein,
-C. Doran, and T. Solorio (eds.), Proceedings of the 2019 Conference of the North American Chapter of
-the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short
-Papers), pp. 4129–4138, Minneapolis, Minnesota, June 2019. Association for Computational Linguistics.
-doi: 10.18653/v1/N19-1419. URL https://aclanthology.org/N19-1419.",2019,https://aclanthology.org/N19-1419,,bert-large,340000000,"bert-base (110M9, elmo-base (130M)",
-"N. F. Liu, M. Gardner, Y. Belinkov, M. E. Peters, and N. A. Smith. Linguistic knowledge and transferability of contextual representations. In J. Burstein, C. Doran, and T. Solorio (eds.), Proceedings of
-the 2019 Conference of the North American Chapter of the Association for Computational Linguistics:
-Human Language Technologies, Volume 1 (Long and Short Papers), pp. 1073–1094, Minneapolis, Minnesota, June 2019. Association for Computational Linguistics. doi: 10.18653/v1/N19-1112. URL
-https://aclanthology.org/N19-1112.",2019,https://aclanthology.org/N19-1112,,,340000000,"BERT (based, large) ELMO, gpt2",
+interpretation with differentiable masking. ",2020-04-30,https://arxiv.org/abs/2004.14992,,,340000000,"BERT-based, BERTLarge",
+"P. M. Htut, J. Phang, S. Bordia, and S. R. Bowman. Do attention heads in bert track syntactic dependencies?",2019-11-27,https://arxiv.org/abs/1911.12246,,,110000000,"BERT, Roborta",
+"O. Kovaleva, A. Romanov, A. Rogers, and A. Rumshisky. Revealing the dark secrets of BERT. ",2019-08-21,https://arxiv.org/abs/1908.08593,,,110000000,BERT,
+"P. Michel, O. Levy, and G. Neubig. Are sixteen heads really better than one? ",2019-05-25,https://arxiv.org/abs/1905.10650,,,110000000,BERT,
+"N. F. Liu, M. Gardner, Y. Belinkov, M. E. Peters, and N. A. Smith. Linguistic knowledge and transferability of contextual representations. ",2019-03-21,https://arxiv.org/abs/1903.08855,,,340000000,"BERT (based, large) ELMO, gpt2",
