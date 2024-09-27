@@ -1,0 +1,58 @@
+,mmlu
+BART base,0.0
+BERT-base,0.0
+BERT-large,0.0
+BLOOM (176B),30.85
+Chinchilla,0.0
+elmo,0.0
+ELMo,0.0
+flan-t5,0.0
+Gemma-7B,64.56
+GPT-2 Large,26.07
+GPT-2 Small,25.83
+GPT-2 XL,0.0
+GPT-2 Medium,0.0
+GPT-J 6B,26.78
+GPT-Neo 125M,25.97
+GPT-Neo 2.7B,26.45
+GPT-NeoX,25.0
+Alpaca,0.0
+Llama 13B,46.9
+Llama 30B,57.8
+Llama 65B,63.4
+Llama 7B,35.1
+Llama-2 13B,55.77
+Llama-2 13B Chat,54.64
+Llama-2 70B,69.83
+Llama-2 7B,46.87
+Llama-2 7B Chat,48.32
+Vicuna-13b,56.67
+Llama-3 8B,66.7
+Llama-3 8B Instruct,67.07
+Stable Beluga 2 70B,68.79
+M2M100,0.0
+MBART,0.0
+Mistral 7B,0.0
+mt5,0.0
+NLLB-200,0.0
+OPT 125M,26.02
+OPT 13B,24.9
+OPT 175B,0.0
+OPT 6.7B,24.57
+OPT 66B,26.99
+Pythia 1.4B,25.8
+Pythia 12B,26.76
+Pythia 160M,24.86
+Pythia 2.8B,25.86
+Pythia 410M,25.99
+Pythia 6.9B,26.48
+Pythia 70M,25.9
+QWEN Chat 72B,77.46
+RoBERTa-base,0.0
+RoBERTa-large,0.0
+RWKV v5,0.0
+t5-base,0.0
+t5-large,0.0
+t5-xxl ,0.0
+XLM-RoBERTa-large,0.0
+Yi-34B,75.56
